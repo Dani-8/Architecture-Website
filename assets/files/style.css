@@ -52,7 +52,7 @@ html, body{
 
 
 .nav-links{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 
 
 }
@@ -86,7 +86,7 @@ html, body{
     background-color: black;
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin-top: 100px;
     margin-bottom: 200px;
 
@@ -96,19 +96,19 @@ html, body{
 
 .main-content{
     position: relative;
+    background-color: tomato;
     /* top: 100px; */
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     
-    background-color: tomato;
-    width: 100%;
-
 }
 
 .heading{
-    background-color: lightblue;
+    /* background-color: lightblue; */
     height: fit-content;
     position: absolute;
     top: 100px;
@@ -134,8 +134,7 @@ html, body{
 }
 
 .main-content .para {
-    background-color: lightblue;
-    height: fit-content;
+    /* background-color: lightblue; */
     position: absolute;
     top: 90px;
     right: 430px;
@@ -148,25 +147,6 @@ html, body{
 
 }
 
-
-
-
-
-svg{
-    position: relative;
-    top: 200px;
-    width: calc(100% - 50px);
-    height: 500px;
-    width: 100%;
-    margin-top: 100px;
-    background-color: red;
-}
-svg path{
-    /* height: 100%;
-    width: 100%; */
-
-    
-}
 
 
 
