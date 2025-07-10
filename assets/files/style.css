@@ -12,6 +12,10 @@ html, body{
     font-family: "Moki";
     src: url("../Moki.ttf");
 }
+@font-face {
+    font-family: "fontf";
+    src: url("../Dragon\ is\ coming.otf");
+}
 
 /* NAVBAR */
 /* NAVBAR */
@@ -103,16 +107,34 @@ html, body{
 
 }
 
+.heading{
+    background-color: lightblue;
+    height: fit-content;
+    position: relative;
+    top: 30px;
+}
 .main-content .heading h1{
     color: white;
     font-size: 80px;
     font-family: "Moki";
+    line-height: 40px;
 }
+.main-content .heading h1 span{
+    font-family: "fontf";
+    font-size: 180px;
+    position: relative;
+    bottom: 10px;
+    font-weight: 300;
+    color: rgb(106, 5, 99);
+    line-height: 0px;
+    /* background: pink; */
+    margin-left: 30px;
 
+}
 svg{
     width: calc(100% - 50px);
-    width: 80%;
     /* height: 100%; */
+    margin-top: 100px;
     background-color: red;
 }
 svg path{
