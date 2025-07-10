@@ -4,8 +4,11 @@
     padding: 0;
 }
 html, body{
+      margin: 0;
+  padding: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     background-color: lightslategray;
 }
 @font-face {
@@ -26,6 +29,7 @@ html, body{
 
 
 .navbar{
+    z-index: 3;
     position: absolute;
     top: 0;
     left: 0;
@@ -87,7 +91,6 @@ html, body{
     position: relative;
     width: 100%;
     /* height: 100%; */
-    margin-top: 100px;
     margin-bottom: 200px;
 
     
@@ -97,14 +100,15 @@ html, body{
 .main-content{
     position: relative;
     background-color: tomato;
-    /* top: 100px; */
+    top: 100px;
     width: 100%;
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    /* justify-content: center; */
     
+    /* padding: 50px; */
 }
 
 .heading{
@@ -147,6 +151,19 @@ html, body{
 
 }
 
+
+
+
+
+svg{
+    position: relative;
+    top: 200px;
+    max-width: calc(100% - 120px);
+    display: block;
+    /* height: 500px; */
+    margin-top: 100px;
+    background-color: red;
+}
 
 
 
