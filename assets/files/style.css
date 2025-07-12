@@ -43,13 +43,14 @@ html, body{
 }
 
 .logo{
-    width: 140px;
-    height: 60px;
+    width: 120px;
+    height: 50px;
     /* background-color: rgb(200, 58, 82); */
 }
 .logo img{
     height: 100%;
     width: 100%;
+    
     /* object-fit: contain; */
 }
 
@@ -131,7 +132,10 @@ html, body{
     position: relative;
     bottom: 20px;
     font-weight: 300;
-    color: rgb(106, 5, 99);
+    
+    background: linear-gradient(120deg, #e07941 40%, #e8ce5e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 0px;
     /* background: pink; */
     margin-left: 50px;
@@ -167,7 +171,8 @@ html, body{
     background-color: rgb(251, 98, 21);
     width: 230px;
     padding: 5px 10px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     
