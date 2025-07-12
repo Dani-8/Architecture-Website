@@ -123,11 +123,11 @@ html, body{
 .main-content .heading h1{
     color: white;
     font-size: 110px;
-    font-family: "Moki", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Moki', sans-serif;
     line-height: 50px;
 }
 .main-content .heading h1 span{
-    font-family: "fontf";
+    font-family: 'fontf', sans-serif;
     font-size: 220px;
     position: relative;
     bottom: 20px;
@@ -271,6 +271,80 @@ html, body{
 .star2 path{
     opacity: .07;
 }
+
+
+
+
+/* SECOND SECTION */
+/* SECOND SECTION */
+/* SECOND SECTION */
+/* SECOND SECTION */
+/* SECOND SECTION */
+/* SECOND SECTION */
+/* SECOND SECTION */
+
+.sec-section{
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0;
+    position: relative;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proj-heading{
+    background-color: lightgreen;
+    width: 90%;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.proj-heading h1{
+    font-family: 'Moki', sans-serif;
+    font-size: 30px;
+
+}
+
+
+/* PROJECTS */
+/* PROJECTS */
+/* PROJECTS */
+/* PROJECTS */
+/* PROJECTS */
+/* PROJECTS */
+
+.project-cont{
+    background-color: lightblue;
+    width: 90%;
+    /* height: 400px; */
+    padding: 30px;
+
+
+
+}
+
+
+
+.proj{
+    background-color: rgb(242, 91, 116);
+    height: 380px;
+    width: 550px;
+
+
+}
+
+
+
+
+
 
 
 
