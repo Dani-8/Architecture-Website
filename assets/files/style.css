@@ -113,6 +113,7 @@ html, body{
 
 .heading{
     /* background-color: lightblue; */
+    z-index: 10;
     width: fit-content;
     /* position: absolute; */
     top: 100px;
@@ -139,6 +140,7 @@ html, body{
 
 .main-content .para {
     /* background-color: lightblue; */
+    z-index: 10;
     position: absolute;
     top: 30px;
     right: 300px;
@@ -154,6 +156,7 @@ html, body{
 
 
 .btn{
+    z-index: 10;
     position: absolute;
     right: 0;
 
@@ -193,21 +196,22 @@ html, body{
 }
 
 
-
-
-
-
-
-
-
-svg{
+.star1{
+    z-index: 1;
+    /* background-color: lightcoral; */
     position: absolute;
-    top: 00px;
-    display: block;
-    width: 100%;
-    height: 100%;
-
+    bottom: 60px;
+    left: 40%;
 }
+.star path{
+    fill: rgb(255, 255, 255);
+    opacity: .05;
+}
+
+
+
+
+
 
 .svg-cont{
     position: relative;
@@ -216,8 +220,18 @@ svg{
     height: 650px;
 
     margin: 0 auto;
+}
+
+.content-svg{
+    position: absolute;
+    top: 00px;
+    display: block;
+    width: 100%;
+    height: 100%;
 
 }
+
+
 
 
 .heading2{
@@ -244,7 +258,15 @@ svg{
 
 
 
-g
+.star2{
+    position: absolute;
+    bottom: 130px;
+    right: -120px;
+}
+.star2 path{
+    opacity: .07;
+}
+
 
 
 
