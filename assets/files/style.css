@@ -363,7 +363,7 @@ html, body{
     padding: 30px;
 
 
-    overflow: auto;
+    overflow: hidden;
     white-space: nowrap;
 
 }
