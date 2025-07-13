@@ -9,82 +9,55 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Determine how much to scroll: width of one project + its gap
     const projectWidth = projectItems[0].offsetWidth;
-    const projectGap = parseFloat(getComputedStyle(projectsContainer).gap); // Get gap from CSS
-
-    // Calculate scroll amount per click
+    const projectGap = parseFloat(getComputedStyle(projectsContainer).gap);
     const scrollAmount = projectWidth + projectGap;
 
-    // Function to handle scrolling with GSAP
+    // Function to update button visibility
+    const updateButtonVisibility = () => {
+        // Hide/show prev button
+        if (projectsContainer.scrollLeft <= 0) {
+            prevBtn.style.display = 'none';
+        } else {
+            prevBtn.style.display = 'block';
+        }
+
+        // Hide/show next button
+        // projectsContainer.scrollWidth is total scrollable width
+        // projectsContainer.clientWidth is the visible width
+        // If (scrollLeft + visibleWidth) is approximately totalWidth, then we're at the end
+        const atEnd = Math.abs(projectsContainer.scrollLeft + projectsContainer.clientWidth - projectsContainer.scrollWidth) < 1; // Use a small threshold for floating point
+        if (atEnd) {
+            nextBtn.style.display = 'none';
+        } else {
+            nextBtn.style.display = 'block';
+        }
+    };
+
     const scrollTo = (direction) => {
         let newScrollLeft = projectsContainer.scrollLeft;
 
         if (direction === 'next') {
             newScrollLeft += scrollAmount;
-            // Prevent scrolling past the end (adjust if you want partial views at end)
             const maxScrollLeft = projectsContainer.scrollWidth - projectsContainer.clientWidth;
             newScrollLeft = Math.min(newScrollLeft, maxScrollLeft);
         } else if (direction === 'prev') {
             newScrollLeft -= scrollAmount;
-            // Prevent scrolling before the beginning
             newScrollLeft = Math.max(newScrollLeft, 0);
         }
 
         gsap.to(projectsContainer, {
             scrollLeft: newScrollLeft,
-            duration: .1, // Animation duration in seconds
-            ease: "power2.out" // Easing for smoother animation
+            duration: 0.1,
+            ease: "power2.out",
+            onComplete: updateButtonVisibility // Update buttons after animation finishes
         });
     };
 
-    // Event listeners for buttons
+    // Event listeners
     nextBtn.addEventListener('click', () => scrollTo('next'));
     prevBtn.addEventListener('click', () => scrollTo('prev'));
 
-    // Optional: Make sure the container is at the start initially
-    projectsContainer.scrollLeft = 0;
+    // Initial check when page loads
+    updateButtonVisibility();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
