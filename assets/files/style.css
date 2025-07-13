@@ -369,15 +369,15 @@ html, body{
 }
 .projects{
     display: flex;
-    gap: 30px;  
-
+    gap: 70px;  
+    background-color: pink;
 }
 
 
 .proj{
     background-color: rgb(242, 91, 116);
-    height: 380px;
-    width: 550px;
+    height: 400px;
+    width: 600px;
     flex-shrink: 0;
 
 }
