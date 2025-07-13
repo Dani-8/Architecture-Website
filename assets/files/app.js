@@ -18,23 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentScrollLeft = projectsContainer.scrollLeft;
         const maxScrollLeft = projectsContainer.scrollWidth - projectsContainer.clientWidth;
 
-        // Use a small threshold (e.g., 5 pixels) for comparison
-        const threshold = 5;
+        // Use a small threshold for comparison
+        const threshold = 1;
 
         // Hide/show prev button
-        if (currentScrollLeft <= threshold) {
-            prevBtn.style.display = 'none';
-        } else {
-            prevBtn.style.display = 'block';
-        }
+        prevBtn.style.display = currentScrollLeft <= threshold ? 'none' : 'block';
 
         // Hide/show next button
-        // Check if we are very close to the maximum scrollable position
-        if (currentScrollLeft >= maxScrollLeft - threshold) {
-            nextBtn.style.display = 'none';
-        } else {
-            nextBtn.style.display = 'block';
-        }
+        nextBtn.style.display = currentScrollLeft >= maxScrollLeft - threshold ? 'none' : 'block';
     };
 
     const scrollTo = (direction) => {
@@ -49,17 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
             newScrollLeft = Math.max(newScrollLeft, 0);
         }
 
+        // Update button visibility immediately based on the target scroll position
+        const tempScrollLeft = projectsContainer.scrollLeft;
+        projectsContainer.scrollLeft = newScrollLeft;
+        updateButtonVisibility();
+        projectsContainer.scrollLeft = tempScrollLeft; // Restore original position
+
         gsap.to(projectsContainer, {
             scrollLeft: newScrollLeft,
-            duration: 0.6,
+            duration: 0.1,
             ease: "power2.out",
-            onComplete: updateButtonVisibility // Update buttons after animation finishes
+            onUpdate: updateButtonVisibility, // Update during animation
+            onComplete: updateButtonVisibility // Final update after animation
         });
     };
 
     // Event listeners
     nextBtn.addEventListener('click', () => scrollTo('next'));
     prevBtn.addEventListener('click', () => scrollTo('prev'));
+
+    // Listen for scroll events (in case of manual scrolling)
+    projectsContainer.addEventListener('scroll', updateButtonVisibility);
 
     // Initial check when page loads
     updateButtonVisibility();
