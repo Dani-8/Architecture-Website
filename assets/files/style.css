@@ -382,12 +382,67 @@ html, body{
 
 }
 
+.proj-img{
+    height: 100%;
+    width: 100%;
+
+
+}
+.proj-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
+/* The wrapper for all project items */
+.projects {
+    display: flex; /* Arranges items horizontally */
+    gap: 20px; /* Space between projects */
+    padding: 10px; /* Optional padding for inner content */
+    /* This will be scrolled by JS, so don't set fixed width here */
+    scroll-behavior: smooth; /* Fallback for non-JS scrolling, not used with GSAP */
+    overflow-x: hidden; /* Hide scrollbar if not using scrollLeft directly */
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
 
+/* Individual project item styling */
+.proj {
+    min-width: 300px; /* Each project's width. Adjust based on how many you want visible */
+    flex-shrink: 0; /* Prevents items from shrinking */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+/* Navigation Buttons Styling */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10; /* Ensure buttons are above projects */
+    border-radius: 50%; /* Makes them circular */
+    transition: background-color 0.3s ease;
+}
 
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
 
 
 
