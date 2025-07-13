@@ -369,7 +369,7 @@ html, body{
 }
 .projects{
     display: flex;
-    gap: 70px;  
+    gap: 50px;  
     background-color: pink;
 }
 
