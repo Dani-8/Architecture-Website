@@ -15,19 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to update button visibility
     const updateButtonVisibility = () => {
+        const currentScrollLeft = projectsContainer.scrollLeft;
+        const maxScrollLeft = projectsContainer.scrollWidth - projectsContainer.clientWidth;
+
+        // Use a small threshold (e.g., 5 pixels) for comparison
+        const threshold = 5;
+
         // Hide/show prev button
-        if (projectsContainer.scrollLeft <= 0) {
+        if (currentScrollLeft <= threshold) {
             prevBtn.style.display = 'none';
         } else {
             prevBtn.style.display = 'block';
         }
 
         // Hide/show next button
-        // projectsContainer.scrollWidth is total scrollable width
-        // projectsContainer.clientWidth is the visible width
-        // If (scrollLeft + visibleWidth) is approximately totalWidth, then we're at the end
-        const atEnd = Math.abs(projectsContainer.scrollLeft + projectsContainer.clientWidth - projectsContainer.scrollWidth) < 1; // Use a small threshold for floating point
-        if (atEnd) {
+        // Check if we are very close to the maximum scrollable position
+        if (currentScrollLeft >= maxScrollLeft - threshold) {
             nextBtn.style.display = 'none';
         } else {
             nextBtn.style.display = 'block';
@@ -48,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         gsap.to(projectsContainer, {
             scrollLeft: newScrollLeft,
-            duration: 0.1,
+            duration: 0.6,
             ease: "power2.out",
             onComplete: updateButtonVisibility // Update buttons after animation finishes
         });

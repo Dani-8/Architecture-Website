@@ -299,7 +299,7 @@ html, body{
 }
 
 .proj-heading{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     width: 90%;
     padding: 20px 30px;
     border-bottom: 2px solid black;
@@ -357,7 +357,7 @@ html, body{
 /* PROJECTS */
 
 .project-cont{
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 90%;
     /* height: 400px; */
     padding: 30px;
@@ -368,10 +368,10 @@ html, body{
 
 }
 .projects{
+    height: 400px;
     display: flex;
-    gap: 50px;  
-    background-color: pink;
-
+    gap: 65px;  
+    /* background-color: pink; */
 
     /* This will be scrolled by JS, so don't set fixed width here */
     scroll-behavior: smooth; /* Fallback for non-JS scrolling, not used with GSAP */
@@ -382,19 +382,15 @@ html, body{
 
 
 .proj{
-    background-color: rgb(242, 91, 116);
+    /* background-color: rgb(242, 91, 116); */
     height: 400px;
-    width: 600px;
+    width: 620px;
     flex-shrink: 0;
+    object-fit: cover;
 
 }
 
-.proj-img{
-    height: 100%;
-    width: 100%;
 
-
-}
 .proj-img img{
     height: 100%;
     width: 100%;
