@@ -1,4 +1,6 @@
-gsap.from('.main-content', {
+var navBarTL = gsap.timeline()
+
+navBarTL.from('.main-content', {
     opacity: 0,
     duration: 5,
 
@@ -6,8 +8,8 @@ gsap.from('.main-content', {
 })
 
 
-var svgImg = gsap.timeline()
-svgImg.fromTo(".svg-cont", 
+var svgImgTL = gsap.timeline()
+svgImgTL.fromTo(".svg-cont", 
     {
         y: -400,
         duration: .5,
@@ -25,14 +27,14 @@ svgImg.fromTo(".svg-cont",
 
 
 )
-svgImg.to(".svg-cont", {
+svgImgTL.to(".svg-cont", {
     y: -440,
     duration: 1.5,
     // delay: 3,
     ease: "power2.inOut",
 })
 
-svgImg.to(".svg-cont", {
+svgImgTL.to(".svg-cont", {
     y: 0,
     duration: 1.3,
     // delay: 4,
