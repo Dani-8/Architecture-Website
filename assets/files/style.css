@@ -123,7 +123,7 @@ html, body{
 
 
 .main-content{
-    /* background-color: tomato; */
+    background-color: tomato;
     position: absolute;
     left: 100px;
     top: 130px;
@@ -135,24 +135,31 @@ html, body{
     justify-content: center;
     
     /* padding: 50px; */
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .heading{
-    /* background-color: lightblue; */
+    background-color: lightblue;
     z-index: 10;
     width: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* position: absolute; */
-    top: 100px;
-    left: 100px;
+    /* top: 100px;
+    left: 100px; */
 }
 .main-content .heading h1{
     color: white;
     font-size: 110px;
     font-family: 'Moki', sans-serif;
     line-height: 50px;
+    height: 250px;
+    position: relative;
+    top: 50px;    
 }
-.main-content .heading h1 span{
+.headingCenterLine{
     font-family: 'fontf', sans-serif;
     font-size: 220px;
     position: relative;
@@ -167,6 +174,14 @@ html, body{
     margin-left: 50px;
 
 }
+
+
+.headingLine{
+    /* opacity: 0.3; */
+    display: inline-block;
+    /* overflow: hidden; */
+}
+
 
 .main-content .para {
     /* background-color: lightblue; */
