@@ -163,22 +163,21 @@ html, body{
 .headingCenterLine{
     font-family: 'fontf', sans-serif;
     font-size: 220px;
+    font-weight: 500;
     z-index: 1;
+    opacity: 0;
+
     display: inline-block;
     padding: 100px 20px;
+    margin-left: 30px;
     position: relative;
     bottom: 10px;
-    font-weight: 300;
+
+
     background: linear-gradient(120deg, #e07941 40%, #e8ce5e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
 
-
-    
-    /* line-height: 0px; */
-    /* background: pink; */
-    margin-left: 30px;
 
 }
 
