@@ -1,27 +1,56 @@
 var mainContentText = gsap.timeline()
 
-// mainContentText.from('.main-content', {
-//     // opacity: 0,
-//     // duration: 5,
 
-
-// })
-
-
-mainContentText.from(".headingLine", {
-    y: 150,
-    duration: 1,
-    opacity: 1
-
+mainContentText.fromTo(".headingLineUp", 
+    {
+        y: -180,
+        opacity: 0.5
+    },
+    {
+        y: 0,
+        duration: 1,
+        opacity: 1
+            
 })
+mainContentText.fromTo(".headingLineDown", 
+    {
+        y: 180,
+        opacity: 0.5,
+    },
+    {
+        y: 0,
+        duration: 1,
+        opacity: 1
+        
+
+}, "<")
+mainContentText.fromTo(".headingCenterLine", 
+    {
+        scale: 1.5,
+        opacity: 0,
+    
+    },
+    {
+        scale: 1,
+        opacity: 1,
+        duration: .5,
+
+}, ".5")
+
+
+
+
+
 
 
 
 
 var svgImgTL = gsap.timeline()
+
+
 svgImgTL.fromTo(".svg-cont", 
     {
-        // y: -400,
+        y: -400,
         duration: .2,
         opacity: 0,
         scale: .6,
@@ -38,7 +67,7 @@ svgImgTL.fromTo(".svg-cont",
 
 )
 svgImgTL.to(".svg-cont", {
-    // y: -440,
+    y: -440,
     duration: 1,
     // delay: 3,
     ease: "power2.inOut",
@@ -54,16 +83,8 @@ svgImgTL.to(".svg-cont", {
 
 })
 
-
-
-
-
-
-
-
-
-
-
+var masterTL = gsap.timeline();
+masterTL.add(svgImgTL).add(mainContentText); // This order makes svgImgTL first
 
 
 
