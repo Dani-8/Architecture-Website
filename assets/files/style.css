@@ -135,6 +135,7 @@ html, body{
     justify-content: center;
     
     /* padding: 50px; */
+    opacity: 0;
 }
 
 .heading{
