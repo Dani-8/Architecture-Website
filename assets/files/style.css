@@ -123,7 +123,8 @@ html, body{
 
 
 .main-content{
-    background-color: tomato;
+    /* background-color: tomato; */
+    outline: 2px solid red;
     position: absolute;
     left: 100px;
     top: 130px;

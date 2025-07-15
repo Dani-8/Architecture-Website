@@ -57,7 +57,57 @@ mainContentText.fromTo(".star1",
 )
 
 
+mainContentText.fromTo(".btn", 
+    {
+        opacity: 0,
+        x: 150, 
+        width: 60
+        
 
+    },
+    {
+        opacity: 1,
+        x: 0,
+        duration: .8,
+        ease: "back.out(3)",
+
+    }, "-=.4"
+)
+mainContentText.to(".btn", {
+        width: 230,
+        duration: .5,
+        ease: "back.out(2.5)",
+
+})
+
+mainContentText.fromTo(".btn a", 
+    {
+        opacity: 0,
+        scale: .8,
+        
+
+    },
+    {
+        opacity: 1,
+        scale: 1,
+        ease: "power2.inOut",
+
+    }, "-=.2"
+)
+mainContentText.fromTo(".btn i", 
+    {
+        opacity: 0,
+        scale: .8,
+        
+
+    },
+    {
+        opacity: 1,
+        scale: 1,
+        ease: "power2.inOut",
+
+    }, "<"
+)
 
 
 
