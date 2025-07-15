@@ -125,11 +125,14 @@ html, body{
 .main-content{
     /* background-color: tomato; */
     outline: 2px solid red;
+    /* overflow: hidden; */
     position: absolute;
     left: 100px;
     top: 130px;
     width: 90%;
     height: 250px;
+
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -217,10 +220,24 @@ html, body{
 }
 
 
+
+.heroSection-btn{
+    /* background-color: lightseagreen; */
+    overflow: hidden;
+    position: absolute;
+    /* top: 0; */
+    right: 0; 
+    width: 230px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn{
     z-index: 10;
+    opacity: 0;
     position: absolute;
-    right: 0;
 
     
     outline: none;

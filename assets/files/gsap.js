@@ -57,28 +57,44 @@ mainContentText.fromTo(".star1",
 )
 
 
+
+
+
+
 mainContentText.fromTo(".btn", 
     {
         opacity: 0,
-        x: 150, 
+        x: 150,
         width: 60
-        
-
     },
     {
         opacity: 1,
         x: 0,
-        duration: .8,
+        duration: 0.8,
         ease: "back.out(3)",
+        
+        onComplete: () => {
+        // ⬅️ when btn reaches x: 0, make parent overflow visible
+        gsap.set(".heroSection-btn", { overflow: "visible" });
+        }
+    }, "-=0.4"
+);
 
-    }, "-=.4"
-)
 mainContentText.to(".btn", {
-        width: 230,
-        duration: .5,
-        ease: "back.out(2.5)",
+    width: 230,
+    duration: 0.6,
+    ease: "back.out(4)"
+});
 
-})
+
+
+
+
+
+
+
+
+
 
 mainContentText.fromTo(".btn a", 
     {
