@@ -1,6 +1,14 @@
 var mainContentText = gsap.timeline()
 
 
+// HEROSECTION-HEADING
+// HEROSECTION-HEADING
+// HEROSECTION-HEADING
+// HEROSECTION-HEADING
+// HEROSECTION-HEADING
+
+
+
 mainContentText.fromTo(".headingLineUp", 
     {
         y: -180,
@@ -40,24 +48,61 @@ mainContentText.fromTo(".headingCenterLine",
 
 
 
+// HEROSECTION-PARA
+// HEROSECTION-PARA
+// HEROSECTION-PARA
+// HEROSECTION-PARA
+// HEROSECTION-PARA
+
+
+const heroSectionPara = document.querySelector(".para p")
+const heroSectionParaLines = heroSectionPara.innerHTML.split("<br>")
+
+
+console.log(heroSectionParaLines);
+
+
+
+
+
+
+
+
+
+
+
+
+// HEROSECTION-STAR
+// HEROSECTION-STAR
+// HEROSECTION-STAR
+// HEROSECTION-STAR
+// HEROSECTION-STAR
+
+
 
 mainContentText.fromTo(".star1", 
     {
         opacity: 0,
         scale: 0.5,
-        ease: "power2.out",
-
+        
     },
     {
         opacity: 1,
         scale: 1,
-        // duration: .5,
+        ease: "back.out(4)",
+        duration: .8,
         // delay: 1.5,
-    }
+    }, "-=.5"
 )
 
 
 
+
+// HEROSECTION-BTN
+// HEROSECTION-BTN
+// HEROSECTION-BTN
+// HEROSECTION-BTN
+// HEROSECTION-BTN
 
 
 
@@ -77,22 +122,14 @@ mainContentText.fromTo(".btn",
         // ⬅️ when btn reaches x: 0, make parent overflow visible
         gsap.set(".heroSection-btn", { overflow: "visible" });
         }
-    }, "-=0.4"
+    }, "-=1"
 );
 
 mainContentText.to(".btn", {
     width: 230,
     duration: 0.6,
     ease: "back.out(4)"
-});
-
-
-
-
-
-
-
-
+}, "-=0.2");
 
 
 
@@ -130,7 +167,11 @@ mainContentText.fromTo(".btn i",
 
 
 
-
+// SVGIMG
+// SVGIMG
+// SVGIMG
+// SVGIMG
+// SVGIMG
 
 
 var svgImgTL = gsap.timeline()
