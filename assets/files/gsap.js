@@ -106,7 +106,7 @@ mainContentText.fromTo(".star1",
         ease: "back.out(4)",
         duration: .8,
         // delay: 1.5,
-    }, "-=.5"
+    }, "-=1.5"
 )
 
 
@@ -136,14 +136,14 @@ mainContentText.fromTo(".btn",
         // ⬅️ when btn reaches x: 0, make parent overflow visible
         gsap.set(".heroSection-btn", { overflow: "visible" });
         }
-    }, "-=1"
+    }, "-=1.7"
 );
 
 mainContentText.to(".btn", {
     width: 230,
     duration: 0.6,
     ease: "back.out(4)"
-}, "-=0.2");
+}, "-=0.8");
 
 
 
@@ -159,7 +159,7 @@ mainContentText.fromTo(".btn a",
         scale: 1,
         ease: "power2.inOut",
 
-    }, "-=.2"
+    }, "-=.5"
 )
 mainContentText.fromTo(".btn i", 
     {
