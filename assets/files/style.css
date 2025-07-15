@@ -204,7 +204,7 @@ html, body{
 
 
 .main-content .para {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     z-index: 10;
     position: absolute;
     top: 30px;
@@ -215,7 +215,14 @@ html, body{
     color: rgb(104, 104, 104);
     font-size: 17px;
     line-height: 25px;
+    overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.paraLine{
+    display: inline-block;
+    opacity: 0;
+    /* background-color: red; */
 
 }
 
