@@ -123,7 +123,7 @@ html, body{
 
 
 .main-content{
-    /* background-color: tomato; */
+    background-color: tomato;
     position: absolute;
     left: 100px;
     top: 130px;
@@ -168,7 +168,7 @@ html, body{
     opacity: 0;
 
     display: inline-block;
-    padding: 100px 20px;
+    padding: 100px 30px;
     margin-left: 30px;
     position: relative;
     bottom: 10px;
@@ -200,7 +200,7 @@ html, body{
 
 
 .main-content .para {
-    /* background-color: lightblue; */
+    background-color: lightblue;
     z-index: 10;
     position: absolute;
     top: 30px;
@@ -264,6 +264,7 @@ html, body{
     position: absolute;
     bottom: 60px;
     left: 40%;
+    opacity: 0;
 }
 .star path{
     fill: rgb(255, 255, 255);
