@@ -9,21 +9,23 @@ var navbarTL = gsap.timeline()
 navbarTL.fromTo(".logo img", 
     {
         opacity:  0,
-        scale: 2,
-
+        // scale: 0,
+        x: -150,
     },
     {
-        scale: 1,
+        delay: 2.7,
+        // scale: 1,
+        x: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power4.inout"
+        duration: .5,
+        // ease: "power4.inOut",
 
     }
 )
 
 navbarTL.fromTo(".nav-links ul li",
     {
-        y: -40,
+        y: 40,
         opacity:  0,
         
     },
@@ -32,9 +34,9 @@ navbarTL.fromTo(".nav-links ul li",
         opacity:  1,
         duration: .5,
         stagger: .2, 
-        ease: "power3.inOut"
+        ease: "power1.inOut"
 
-    }
+    }, "-=.5"
 )
 
 
@@ -250,9 +252,10 @@ svgImgTL.fromTo(".svg-cont",
     {
         scale: 1,
         delay: .5,
-        duration: .8,
+        duration: 1,
         opacity: 1,
-        ease: "power2.inOut",
+        ease: "circ.inOut",
+
 
     }
 

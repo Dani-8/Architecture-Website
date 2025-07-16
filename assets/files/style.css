@@ -45,7 +45,9 @@ html, body{
 .logo{
     width: 120px;
     height: 50px;
+    margin-left: 50px;
     /* background-color: rgb(200, 58, 82); */
+    overflow: hidden;
 }
 .logo img{
     height: 100%;
@@ -63,6 +65,7 @@ html, body{
     justify-content: center;
     align-items: center;
     /* background-color: rgb(52, 68, 189); */
+    padding: 5px 0;
     overflow: hidden;
 }
 .nav-links ul li{
@@ -103,6 +106,11 @@ html, body{
     transform: scaleX(1);
 
 }
+
+
+
+
+
 
 /* FIRST SECTION */
 /* FIRST SECTION */
