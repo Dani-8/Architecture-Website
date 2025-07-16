@@ -213,6 +213,7 @@ html, body{
 }
 .main-content .para p{
     color: rgb(104, 104, 104);
+    /* background-color: pink; */
     font-size: 17px;
     line-height: 25px;
     overflow: hidden;
@@ -221,7 +222,7 @@ html, body{
 }
 .paraLine{
     display: inline-block;
-    opacity: 0;
+    /* opacity: 0; */
     /* background-color: red; */
 
 }

@@ -54,28 +54,7 @@ mainContentText.fromTo(".headingCenterLine",
 // HEROSECTION-PARA
 // HEROSECTION-PARA
 
-
-const heroSectionPara = document.querySelector(".para p")
-const heroSectionParaLines = heroSectionPara.innerHTML.split("<br>")
-heroSectionPara.innerHTML = heroSectionParaLines.map(heroSectionParaLine => `<span class="paraLine">${heroSectionParaLine}</span>`).join("<br>")
-
-// console.log(heroSectionPara);
-
-mainContentText.fromTo(".paraLine",
-    {
-        y: 30,
-        opacity: 0,
-        
-    },
-    {
-        y: 0,
-        opacity: 1,
-        stagger: .2,
-        duration: .8,
-        ease: "back.out(2.5)"
-    }
-
-)
+git
 
 
 
