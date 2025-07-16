@@ -1,3 +1,50 @@
+var navbarTL = gsap.timeline()
+
+// Navbar
+// Navbar
+// Navbar
+// Navbar
+
+
+navbarTL.fromTo(".logo img", 
+    {
+        opacity:  0,
+        scale: 2,
+
+    },
+    {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "power4.inout"
+
+    }
+)
+
+navbarTL.fromTo(".nav-links ul li",
+    {
+        y: -40,
+        opacity:  0,
+        
+    },
+    {
+        y: 0,
+        opacity:  1,
+        duration: .5,
+        stagger: .2, 
+        ease: "power3.inOut"
+
+    }
+)
+
+
+
+
+
+
+
+
+
 var mainContentText = gsap.timeline()
 
 
@@ -53,31 +100,6 @@ mainContentText.fromTo(".headingCenterLine",
 // HEROSECTION-PARA
 // HEROSECTION-PARA
 // HEROSECTION-PARA
-
-
-// const heroSectionPara = document.querySelector(".para p")
-// const heroSectionParaLines = heroSectionPara.innerHTML.split("<br>")
-// heroSectionPara.innerHTML = heroSectionParaLines.map(heroSectionParaLine => `<span class="paraLine">${heroSectionParaLine}</span>`).join("<br>")
-
-// // console.log(heroSectionPara);
-
-// gsap.set(".paraLine", {opacity: 0, })
-
-// mainContentText.fromTo(".paraLine",
-//     {
-//         y: 30,
-//         opacity: 0,
-        
-//     },
-//     {
-//         y: 0,
-//         opacity: 1,
-//         stagger: .2,
-//         duration: .8,
-//         ease: "back.out(2.5)"
-//     }
-
-// )
 
 
 // STEP 1: wrap lines
