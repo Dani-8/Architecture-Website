@@ -54,9 +54,56 @@ mainContentText.fromTo(".headingCenterLine",
 // HEROSECTION-PARA
 // HEROSECTION-PARA
 
-git
+
+// const heroSectionPara = document.querySelector(".para p")
+// const heroSectionParaLines = heroSectionPara.innerHTML.split("<br>")
+// heroSectionPara.innerHTML = heroSectionParaLines.map(heroSectionParaLine => `<span class="paraLine">${heroSectionParaLine}</span>`).join("<br>")
+
+// // console.log(heroSectionPara);
+
+// gsap.set(".paraLine", {opacity: 0, })
+
+// mainContentText.fromTo(".paraLine",
+//     {
+//         y: 30,
+//         opacity: 0,
+        
+//     },
+//     {
+//         y: 0,
+//         opacity: 1,
+//         stagger: .2,
+//         duration: .8,
+//         ease: "back.out(2.5)"
+//     }
+
+// )
 
 
+// STEP 1: wrap lines
+const heroSectionPara = document.querySelector(".para p");
+const heroSectionParaLines = heroSectionPara.innerHTML.split("<br>");
+heroSectionPara.innerHTML = heroSectionParaLines
+  .map(line => `<span class="paraLine">${line}</span>`)
+  .join("<br>");
+
+// STEP 2: set initial state
+gsap.set(heroSectionPara, { opacity: 1, })
+
+// STEP 3: animate
+mainContentText.fromTo(".paraLine",
+  {
+    y: 100,
+    opacity: 0
+  },
+  {
+    y: 0,
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.2,
+    ease: "back.out(2.5)"
+  }
+);
 
 
 

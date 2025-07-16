@@ -216,13 +216,13 @@ html, body{
     /* background-color: pink; */
     font-size: 17px;
     line-height: 25px;
-    overflow: hidden;
+    opacity: 0;
+    /* overflow: hidden; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 .paraLine{
     display: inline-block;
-    /* opacity: 0; */
     /* background-color: red; */
 
 }
