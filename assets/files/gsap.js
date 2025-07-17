@@ -294,9 +294,59 @@ gsap.from(".number h1", {
     scrollTrigger: {
         trigger: ".heading2",
         start: "top 90%",
-        // markers: true, // For debugging, remove in production
+        markers: true, // For debugging, remove in production
     }
 });
+
+
+
+
+// PARA2
+// PARA2
+// PARA2
+// PARA2
+// PARA2
+
+
+const heading2Para = document.querySelector(".heading2para p");
+const heading2ParaLines = heading2Para.innerHTML.split("<br>");
+heading2Para.innerHTML = heading2ParaLines
+    .map(line => `<span class="para2Line">${line}</span>`)
+    .join("<br>");
+
+
+
+gsap.from(".para2Line", {
+        y: 100,
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1.2,
+        ease: "back.out(2.5)",
+        scrollTrigger: {
+            trigger: ".heading2para",
+            start: "top 90%",
+            markers: true, // For debugging, remove in production
+            }
+    }
+);
+
+
+gsap.from(".star2", {
+        opacity: 0,
+        scale: 0.5,
+        ease: "back.out(4)",
+        duration: .8,
+        scrollTrigger: {
+            trigger: ".heading2para",
+            start: "top 90%",
+            markers: true, // For debugging, remove in production
+        }
+    }
+
+)
+
+
+
 
 
 
