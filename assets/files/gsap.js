@@ -66,7 +66,7 @@ mainContentText.fromTo(".headingLineUp",
     {
         y: 0,
         duration: 1,
-        opacity: 1
+        opacity: 1,
             
 })
 mainContentText.fromTo(".headingLineDown", 
@@ -77,7 +77,7 @@ mainContentText.fromTo(".headingLineDown",
     {
         y: 0,
         duration: 1,
-        opacity: 1
+        opacity: 1,
         
 
 }, "<")
@@ -90,8 +90,8 @@ mainContentText.fromTo(".headingCenterLine",
     {
         scale: 1,
         opacity: 1,
-        duration: .5,
-
+        duration: 1,
+        ease: "back.out(3)"
 }, ".5")
 
 
