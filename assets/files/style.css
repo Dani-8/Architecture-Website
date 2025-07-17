@@ -6,7 +6,7 @@
 html, body{
     width: 100%;
     height: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* background-color: lightslategray; */
 }
 @font-face {
@@ -463,12 +463,12 @@ html, body{
 /* PROJECTS */
 
 .project-cont{
-    /* background-color: lightblue; */
+    background-color: rgb(23, 115, 146);
     width: 90%;
     /* height: 400px; */
     padding: 30px;
 
-
+    position: relative;
     overflow: hidden;
     white-space: nowrap;
 
@@ -505,17 +505,30 @@ html, body{
 
 
 
-/* Navigation Buttons Styling */
-.nav-btn {
+
+.carsd-btn{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    width: 95%; 
+    background-color: pink;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Navigation Buttons Styling */
+.nav-btn {
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+    border: ;
+    color: rgb(0, 0, 0);
     border: none;
-    padding: 10px 15px;
+    padding: 35px 35px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 30px;
     z-index: 10; /* Ensure buttons are above projects */
     border-radius: 50%; /* Makes them circular */
     transition: background-color 0.3s ease;
@@ -526,13 +539,13 @@ html, body{
 }
 
 .prev-btn {
-    left: 10px;
+    left: 20px;
     display: none;
 
 }
 
 .next-btn {
-    right: 10px;
+    right: 20px;
 }
 
 

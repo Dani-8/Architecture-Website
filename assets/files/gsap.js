@@ -280,6 +280,8 @@ svgImgTL.to(".svg-cont", {
 
 
 
+
+
 // HEADING2
 // HEADING2
 // HEADING2
@@ -293,8 +295,8 @@ gsap.from(".number h1", {
     duration: 1, // This belongs to the animation, not scrollTrigger
     scrollTrigger: {
         trigger: ".heading2",
-        start: "top 90%",
-        markers: true, // For debugging, remove in production
+        start: "top 70%",
+        // markers: true, // For debugging, remove in production
     }
 });
 
@@ -324,8 +326,8 @@ gsap.from(".para2Line", {
         ease: "back.out(2.5)",
         scrollTrigger: {
             trigger: ".heading2para",
-            start: "top 90%",
-            markers: true, // For debugging, remove in production
+            start: "top 75%",
+            // markers: true, // For debugging, remove in production
             }
     }
 );
@@ -338,8 +340,8 @@ gsap.from(".star2", {
         duration: .8,
         scrollTrigger: {
             trigger: ".heading2para",
-            start: "top 90%",
-            markers: true, // For debugging, remove in production
+            start: "top 75%",
+            // markers: true, // For debugging, remove in production
         }
     }
 
