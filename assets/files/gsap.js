@@ -90,7 +90,7 @@ mainContentText.fromTo(".headingCenterLine",
     {
         scale: 1,
         opacity: 1,
-        duration: 1,
+        duration: .8,
         ease: "back.out(3)"
 }, ".5")
 

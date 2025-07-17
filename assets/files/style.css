@@ -155,6 +155,12 @@ html, body{
     /* opacity: 0; */
 }
 
+
+/* FIRST HEADING */
+/* FIRST HEADING */
+/* FIRST HEADING */
+/* FIRST HEADING */
+
 .heading{
     /* background-color: lightblue; */
     z-index: 10;
@@ -216,6 +222,13 @@ html, body{
 }
 
 
+/* FIRST HEADING PARA */
+/* FIRST HEADING PARA */
+/* FIRST HEADING PARA */
+/* FIRST HEADING PARA */
+/* FIRST HEADING PARA */
+
+
 .main-content .para {
     /* background-color: lightblue; */
     z-index: 10;
@@ -240,6 +253,11 @@ html, body{
 
 }
 
+
+/* HEROSECTION-BTN */
+/* HEROSECTION-BTN */
+/* HEROSECTION-BTN */
+/* HEROSECTION-BTN */
 
 
 .heroSection-btn{
@@ -297,6 +315,11 @@ html, body{
 }
 
 
+/* HERO SECTION STAR */
+/* HERO SECTION STAR */
+/* HERO SECTION STAR */
+/* HERO SECTION STAR */
+
 .star1{
     z-index: 1;
     /* background-color: lightcoral; */
@@ -312,8 +335,10 @@ html, body{
 
 
 
-
-
+/* SVG IMG */
+/* SVG IMG */
+/* SVG IMG */
+/* SVG IMG */
 
 .svg-cont{
     position: relative;
@@ -336,6 +361,11 @@ html, body{
 
 
 
+/* SECOND HEADING NUMBER */
+/* SECOND HEADING NUMBER */
+/* SECOND HEADING NUMBER */
+/* SECOND HEADING NUMBER */
+
 
 .heading2{
     position: absolute;
@@ -352,6 +382,14 @@ html, body{
     font-family: "Moki", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* opacity: 0; */
 }
+
+
+
+/* SECOND HEADING PARA */
+/* SECOND HEADING PARA */
+/* SECOND HEADING PARA */
+/* SECOND HEADING PARA */
+
 .heading2para p{
     color: rgb(104, 104, 104);
     font-size: 17px;
@@ -368,6 +406,11 @@ html, body{
 }
 
 
+/* SECOND STAR */
+/* SECOND STAR */
+/* SECOND STAR */
+/* SECOND STAR */
+/* SECOND STAR */
 
 .star2{
     position: absolute;
@@ -377,6 +420,7 @@ html, body{
 .star2 path{
     opacity: .07;
 }
+
 
 
 
@@ -403,6 +447,14 @@ html, body{
     align-items: center;
     flex-direction: column;
 }
+
+
+
+/* PROJUCT HEADING */
+/* PROJUCT HEADING */
+/* PROJUCT HEADING */
+/* PROJUCT HEADING */
+
 
 .proj-heading{
     /* background-color: lightgreen; */
@@ -505,6 +557,12 @@ html, body{
 
 
 
+/* CARD-BTN */
+/* CARD-BTN */
+/* CARD-BTN */
+/* CARD-BTN */
+/* CARD-BTN */
+
 
 .carsd-btn{
     position: absolute;
@@ -519,7 +577,6 @@ html, body{
 }
 
 
-/* Navigation Buttons Styling */
 .nav-btn {
     position: absolute;
     background-color: rgb(235, 235, 235);
@@ -530,7 +587,7 @@ html, body{
     font-size: 30px;
     z-index: 10; /* Ensure buttons are above projects */
     border-radius: 50%; /* Makes them circular */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 .nav-btn:hover {
     background-color: rgba(220, 220, 220, 0.8);
