@@ -280,6 +280,30 @@ svgImgTL.to(".svg-cont", {
 
 
 
+// HEADING2
+// HEADING2
+// HEADING2
+// HEADING2
+// HEADING2
+
+
+gsap.from(".number h1", {
+    opacity: 0,
+    y: -100,
+    duration: 1, // This belongs to the animation, not scrollTrigger
+    scrollTrigger: {
+        trigger: ".heading2",
+        start: "top 90%",
+        // markers: true, // For debugging, remove in production
+    }
+});
+
+
+
+
+
+
+
 var masterTL = gsap.timeline();
 masterTL.add(svgImgTL).add(mainContentText, "-=0.6"); // This order makes svgImgTL first
 

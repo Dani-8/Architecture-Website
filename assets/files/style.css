@@ -339,7 +339,8 @@ html, body{
     position: absolute;
     right: 200px;
     bottom: 170px;
-
+    background-color: rgb(219, 59, 139);
+    overflow: hidden;
 }
 
 .number h1{
@@ -347,7 +348,7 @@ html, body{
     font-size: 80px;
     font-weight: 100;
     font-family: "Moki", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    /* opacity: 0; */
 }
 .heading2 .para p{
     color: rgb(104, 104, 104);
