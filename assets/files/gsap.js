@@ -246,7 +246,7 @@ svgImgTL.fromTo(".svg-cont",
         y: -400,
         duration: .2,
         opacity: 0,
-        scale: .6,
+        scale: .4,
     },
 
     {
