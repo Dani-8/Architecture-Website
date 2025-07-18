@@ -12,11 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectWidth = projectItems[0].offsetWidth;
     const projectGap = parseFloat(getComputedStyle(projectsContainer).gap);
     const scrollAmount = projectWidth + projectGap;
-`
 
-    
 
-`
+
     // Function to update button visibility
     const updateButtonVisibility = () => {
         const currentScrollLeft = projectsContainer.scrollLeft;
@@ -69,3 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial check when page loads
     updateButtonVisibility();
 });
+
+
+
+
+
+
+
+
+
+
+
