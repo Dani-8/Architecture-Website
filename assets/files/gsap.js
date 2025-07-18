@@ -373,11 +373,13 @@ gsap.from(".proj",
     {
         scale: 0,
         opacity: 0,
-        duration: .5,
-        ease: "back.out(3)",
+        duration: 1,
+        ease: "back.out(1)",
         scrollTrigger: {
-            
-
+            trigger: ".proj",
+            start: "top 80%",
+            stagger: 0.2,
+            markers: true
 
         }
     }
