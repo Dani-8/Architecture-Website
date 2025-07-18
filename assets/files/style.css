@@ -544,6 +544,7 @@ html, body{
     height: 400px;
     width: 620px;
     flex-shrink: 0;
+    cursor: pointer;
     object-fit: cover;
 
 }
