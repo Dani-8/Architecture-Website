@@ -157,8 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         gsap.to(projectsContainer, {
             scrollLeft: newScrollLeft,
-            duration: 0.8, // Increased duration for smoother scroll and better stagger visibility
-            ease: "power2.out",
+            duration: 0.1, // Increased duration for smoother scroll and better stagger visibility
+            ease: "power3.out",
             onUpdate: () => {
                 updateButtonVisibility();
                 animateProjectsInView(); // Animate projects during scroll
