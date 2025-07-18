@@ -369,7 +369,19 @@ masterTL.add(svgImgTL).add(mainContentText, "-=0.6"); // This order makes svgImg
 
 
 
+gsap.from(".proj", 
+    {
+        scale: 0,
+        opacity: 0,
+        duration: .5,
+        ease: "back.out(3)",
+        scrollTrigger: {
+            
 
+
+        }
+    }
+)
 
 
 
