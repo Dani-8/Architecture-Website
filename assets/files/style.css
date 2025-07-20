@@ -233,7 +233,7 @@ html, body{
     /* background-color: lightblue; */
     z-index: 10;
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 300px;
 
 }
@@ -346,6 +346,7 @@ html, body{
     max-width: calc(100% - 150px);
     height: 650px;
     /* background-color: rgb(219, 59, 139); */
+
     margin: 0 auto;
     opacity: 0;
 }
