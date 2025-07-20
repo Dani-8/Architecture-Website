@@ -68,9 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 y: 0,
-                duration: 1,
+                duration: 1.2,
                 opacity: 1,
-                    
+                ease: "back.out(1.3)",
+                // ease: "power3.out"
         })
         mainContentText.fromTo(".headingLineDown", 
             {
@@ -79,9 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 y: 0,
-                duration: 1,
+                duration: 1.2,
                 opacity: 1,
-                
+                ease: "power3.out",
+                ease: "back.out(1.3)"
 
         }, "<")
         mainContentText.fromTo(".headingCenterLine", 
@@ -356,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         var masterTL = gsap.timeline();
-        masterTL.add(svgImgTL).add(mainContentText, "-=1.35"); // This order makes svgImgTL first
+        masterTL.add(svgImgTL).add(mainContentText, "-=1.2"); // This order makes svgImgTL first
 
 
 
