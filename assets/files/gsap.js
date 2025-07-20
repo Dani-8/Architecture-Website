@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 opacity:  0,
                 // scale: 0,
-                x: -150,
+                y: -50,
             },
             {
-                delay: 2.7,
+                delay: 2.8,
                 // scale: 1,
-                x: 0,
+                y: 0,
                 opacity: 1,
                 duration: .5,
                 // ease: "power4.inOut",
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         navbarTL.fromTo(".nav-links ul li",
             {
-                y: 40,
+                y: -50,
                 opacity:  0,
                 
             },
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity:  1,
                 duration: .5,
                 stagger: .2, 
-                ease: "power1.inOut"
+                ease: "power2.inOut"
 
             }, "-=.5"
         )
