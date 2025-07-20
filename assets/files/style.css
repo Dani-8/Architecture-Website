@@ -345,7 +345,7 @@ html, body{
     top: 350px;
     max-width: calc(100% - 150px);
     height: 650px;
-
+    /* background-color: rgb(219, 59, 139); */
     margin: 0 auto;
     opacity: 0;
 }

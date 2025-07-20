@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ease: "back.out(4)",
                 duration: .8,
                 // delay: 1.5,
-            }, "-=1.5"
+            }, "-=.5"
         )
 
 
@@ -249,11 +249,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 y: -400,
                 duration: .2,
                 opacity: 0,
-                scale: .4,
+                scale: 0.2,
             },
 
             {
-                scale: 1,
+                scale: .75,
                 delay: .5,
                 duration: 1,
                 opacity: 1,
@@ -269,15 +269,16 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 1,
             // delay: 3,
             ease: "power3.inOut",
+            // ease: "back.out(1.7)"
         })
 
         svgImgTL.to(".svg-cont", {
+            scale: 1,
             y: 0,
-            duration: 1,
+            duration: 1.5,
             // delay: 4,
-            ease: CustomEase.create("custom", "M0,0 C0.164,-0.017 0.181,0 0.265,0.094 0.336,0.174 0.44,0.379 0.472,0.519 0.492,0.609 0.567,0.813 0.63,0.907 0.705,1.018 0.704,1 1,1 "),
-            ease: "power4.inOut",
-
+            // ease: "power4.inOut",
+            ease: "back.out(1.7)"
 
         })
 
