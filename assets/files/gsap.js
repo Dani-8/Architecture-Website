@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             stagger: 0.2,
             duration: 1.2,
             ease: "back.out(2.5)"
-        }
+        }, "<"
         );
 
 
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         )
         svgImgTL.to(".svg-cont", {
-            y: -440,
+            y: -470,
             duration: 1,
             // delay: 3,
             ease: "power3.inOut",
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
             scale: 1,
             y: 0,
             duration: 1.5,
-            // delay: 4,
+            delay: .3,
             // ease: "power4.inOut",
             ease: "back.out(1.7)"
 
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         var masterTL = gsap.timeline();
-        masterTL.add(svgImgTL).add(mainContentText, "-=0.6"); // This order makes svgImgTL first
+        masterTL.add(svgImgTL).add(mainContentText, "-=1.35"); // This order makes svgImgTL first
 
 
 
