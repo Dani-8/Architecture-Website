@@ -615,6 +615,20 @@ html, body{
 
 
 
+.thr-section{
+    background-color: rgb(162, 222, 125);
+    padding: 50px 0;
+    position: relative;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    /* height: 100vh;     */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 
