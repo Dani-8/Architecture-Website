@@ -621,9 +621,7 @@ html, body{
 .thr-section{
     background-color: rgb(162, 222, 125);
     padding: 50px 0;
-    position: relative;
-    top: 0;
-    margin: 0;
+    /* position: relative; */
     width: 100%;
     /* height: 100vh;     */
 
@@ -632,14 +630,74 @@ html, body{
     align-items: center;
     flex-direction: column;
 }
+/* .desgin-cont{
+    width: 90%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+} */
 
+
+.design-heading{
+    background-color: lightblue;
+    position: relative;
+    width: 100%;
+}
 
 .design-heading h1{
     font-family: 'Moki', sans-serif;
     font-size: 60px;
+    /* font-size: 4vw; */
     font-weight: 100;
     text-align: center;
+    line-height: 40px;
+    white-space: nowrap;
+    box-sizing: border-box;
 
+}
+.design-heading h1 .design-heading-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+    /* gap: 10px; */
+    /* display: inline-block; */
+    background-color: rgb(172, 59, 78);
+
+}
+
+
+
+
+.dashes{
+    background-color: pink;
+    /* display: flex; */
+    gap: 10px;
+}
+.dash{
+    background-color: black;
+    width: 40px;
+    height: 5px;
+    margin: 15px 0;
+}
+/* .dash2{
+    width: 100px;
+} */
+
+
+
+
+
+.star-img-cont{
+    background-color: pink;
+    width: 100%;
+    height: 50px;
+    /* position: relative; */
+    
 }
 
 
@@ -648,11 +706,34 @@ html, body{
 
 
 
+.star-img-cont img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    /* position: absolute; */
+    transition: all 2s ease;
+}
+.star-img-cont img:hover{
+    transform: rotate(360deg);
+    transition: all 2s ease;
+    cursor: pointer;
+}
 
-
-
-
-
+.center-img-cont{
+    background-color: pink;
+}
+.center-img-cont img{
+    width: 150px;
+    height: 50px;
+    transition: all 0.3s ease;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+.center-img-cont img:hover{
+    transform: scale(3);
+    transition: all 0.3s ease;
+}
 
 
 
