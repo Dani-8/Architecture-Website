@@ -120,11 +120,9 @@ html, body{
 
 
 .f-section{
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(0, 0, 0);
     /* padding: 10px 0; */
     position: relative;
-    top: 0;
-    margin: 0;
     width: 100%;
     /* height: 150vh; */
 
@@ -140,13 +138,13 @@ html, body{
     position: relative;
     /* margin: 100px auto; */
     padding: 100px 0;
-    background-color: lightblue;
+    /* background-color: rgba(88, 204, 243, 0.41); */
 
 }
 
 
 .main-content{
-    background-color: rgba(221, 96, 74, 0.448);
+    /* background-color: rgba(221, 96, 74, 0.448); */
     /* outline: 2px solid red; */
     /* overflow: hidden; */
     position: relative;
@@ -331,7 +329,7 @@ html, body{
 /* HERO SECTION STAR */
 
 .star1{
-    z-index: 1;
+    z-index: 100;
     /* background-color: lightcoral; */
     position: absolute;
     bottom: 60px;
@@ -352,10 +350,10 @@ html, body{
 
 .svg-cont{
     position: relative;
-    top:  gi50px;
+    top:  50px;
     max-width: calc(100% - 150px);
     height: 650px;
-    background-color: rgb(219, 59, 139);
+    /* background-color: rgb(219, 59, 139); */
 
     margin: 0 auto;
     opacity: 0;
@@ -380,8 +378,8 @@ html, body{
 
 .heading2{
     position: absolute;
-    right: 200px;
-    bottom: 170px;
+    right: 220px;
+    bottom: 150px;
     /* background-color: rgb(219, 59, 139); */
     overflow: hidden;
 }
@@ -425,7 +423,7 @@ html, body{
 
 .star2{
     position: absolute;
-    bottom: 130px;
+    bottom: 90px;
     right: -120px;
 }
 .star2 path{
