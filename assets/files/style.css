@@ -120,18 +120,28 @@ html, body{
 
 
 .f-section{
-    background-color: black;
-    padding: 100px 0;
+    background-color: rgb(78, 78, 78);
+    /* padding: 10px 0; */
     position: relative;
     top: 0;
     margin: 0;
     width: 100%;
-    height: 150vh;
+    /* height: 150vh; */
 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* margin-bottom: 200px; */
 
     
+}
+.f-section .content{
+    /* width: 100%; */
+    /* height: 100%; */
+    /* overflow: hidden; */
+    position: relative;
+    /* margin: 100px auto; */
+    padding: 100px 0;
+    background-color: lightblue;
+
 }
 
 
@@ -139,9 +149,9 @@ html, body{
     background-color: rgba(221, 96, 74, 0.448);
     /* outline: 2px solid red; */
     /* overflow: hidden; */
-    position: absolute;
+    position: relative;
     left: 100px;
-    top: 130px;
+    /* top: 130px; */
     width: 90%;
     height: 250px;
 
@@ -342,7 +352,7 @@ html, body{
 
 .svg-cont{
     position: relative;
-    top: 350px;
+    top:  gi50px;
     max-width: calc(100% - 150px);
     height: 650px;
     background-color: rgb(219, 59, 139);
@@ -352,7 +362,7 @@ html, body{
 }
 
 .content-svg{
-    position: absolute;
+    /* position: absolute; */
     top: 00px;
     display: block;
     width: 100%;
