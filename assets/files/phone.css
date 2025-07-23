@@ -1,0 +1,28 @@
+@media screen and (max-width: 1100px) {
+    .f-section {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .main-content {
+        background-color: rgba(221, 96, 74, 0.448);
+    }
+    
+    .hero-section {
+        background-color: rgba(88, 204, 243, 0.41);
+    }
+    
+    .star1 {
+        bottom: 60px;
+        z-index: 100;
+    }
+    
+    .star2 {
+        bottom: 90px;
+    }
+    
+    .heading2 {
+        right: 220px;
+        bottom: 150px;
+    }
+    
+}
