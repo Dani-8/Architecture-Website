@@ -377,6 +377,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const textSpanToSplit = document.querySelectorAll(".design-heading-line h1 div");
+
+console.log(textSpanToSplit);
+
 
 
 
