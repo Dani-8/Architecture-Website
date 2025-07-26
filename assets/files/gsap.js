@@ -389,6 +389,11 @@ textSpansToSplit.forEach(span => {
 
 
 
+const dashes = document.querySelectorAll(".dashes .dash");
+const centerImg = document.querySelector(".center-img-cont");
+const stars = document.querySelectorAll(".star-img-cont img");
+const designHeadingLine = document.querySelector(".design-heading");
+
 
 
 
