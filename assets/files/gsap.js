@@ -392,16 +392,38 @@ textSpansToSplit.forEach(span => {
 const dashes = document.querySelectorAll(".dashes .dash");
 const centerImg = document.querySelector(".center-img-cont");
 const stars = document.querySelectorAll(".star-img-cont img");
-const designHeadingLine = document.querySelector(".design-heading");
+const designHeading = document.querySelector(".design-heading");
 
 
 
 
 
+let textRevealTL = gsap.timeline({
+    scrollTrigger: {
+        trigger: designHeading,
+        start: "top center",
+        end: "center 20%",
+        // scrub: 1,
+        markers: true, // For debugging, remove in production
+    }
+
+})
 
 
+textRevealTL.to(splitWords, {
+    y: 0,
+    opacity: 1,
+    stagger: 0.1,
+    duration: 1.5,
+    ease: "back.out(2.5)",
+}, 0)
 
-
+textRevealTL.to(dashes, centerImg, stars, {
+    y: 0,
+    opacity: 1,
+    duration: 1.5,
+    ease: "back.out(2.5)",
+}, 0.2)
 
 
 

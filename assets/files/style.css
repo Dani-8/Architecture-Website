@@ -680,6 +680,18 @@ html, body{
 }
 
 
+.split-word{
+    /* display: inline-block; Allows words to sit next to each other */
+    overflow: hidden; /* Crucial for the reveal effect */
+    vertical-align: top; /* Align words correctly if they have different heights */
+    transform: translateY(170px); /* Start hidden below its wrapper */
+    opacity: 0; /* Start invisible */
+    /* background-color: pink; */
+}
+
+
+
+
 
 
 .dashes{
@@ -692,6 +704,7 @@ html, body{
     width: 40px;
     height: 5px;
     margin: 15px 0;
+    opacity: 0;
 }
 .dash2{
     width: 100px;
@@ -717,6 +730,7 @@ html, body{
     object-fit: cover;
     /* position: absolute; */
     transition: all 2s ease;
+    opacity: 0;
 }
 .star-img-cont img:hover{
     transform: rotate(360deg);
@@ -730,7 +744,7 @@ html, body{
     transition: all 0.3s ease-out;
     object-fit: cover;
     cursor: pointer;
-    
+    opacity: 0;
 }
 .center-img-cont img:hover{
     margin: 0 150px;
