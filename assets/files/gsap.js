@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const textSpanToSplit = document.querySelectorAll(".design-heading-line  span");
+const textSpansToSplit = document.querySelectorAll(".design-heading-line span");
 
 let splitWords = [];
 
@@ -390,7 +390,7 @@ textSpansToSplit.forEach(span => {
 
 
 const dashes = document.querySelectorAll(".dashes .dash");
-const centerImg = document.querySelector(".center-img-cont");
+const centerImg = document.querySelector(".center-img-cont img");
 const stars = document.querySelectorAll(".star-img-cont img");
 const designHeading = document.querySelector(".design-heading");
 
@@ -401,29 +401,32 @@ const designHeading = document.querySelector(".design-heading");
 let textRevealTL = gsap.timeline({
     scrollTrigger: {
         trigger: designHeading,
-        start: "top center",
-        end: "center 20%",
-        // scrub: 1,
-        markers: true, // For debugging, remove in production
+        start: "top 70%",
+        end: "center 40%",
+        // end: "top center",
+        scrub: 3,
+        // markers: true, // For debugging, remove in production
     }
 
 })
 
 
 textRevealTL.to(splitWords, {
-    y: 0,
-    opacity: 1,
-    stagger: 0.1,
-    duration: 1.5,
-    ease: "back.out(2.5)",
+    y: "0",       
+    stagger: .4, 
+    duration: 2, // Duration for each word animation
+    opacity: 1,    
+    ease: "power2.out",
+    ease: "back.out(2)"
 }, 0)
 
-textRevealTL.to(dashes, centerImg, stars, {
-    y: 0,
+textRevealTL.to([stars, dashes,  centerImg], {
     opacity: 1,
-    duration: 1.5,
-    ease: "back.out(2.5)",
-}, 0.2)
+    stagger: 0.1,
+    duration: 1, // Duration for the fade-in effect
+    ease: "power3.out",
+}, 0.1); 
 
 
 
+textRevealTL.set(".design-heading-line", { overflow: "visible" });

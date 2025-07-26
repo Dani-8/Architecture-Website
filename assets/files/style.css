@@ -338,7 +338,7 @@ html, body{
 }
 .star path{
     fill: rgb(255, 255, 255);
-    opacity: .05;
+    opacity: .06;
 }
 
 
@@ -423,11 +423,11 @@ html, body{
 
 .star2{
     position: absolute;
-    bottom: 90px;
+    bottom: 150px;
     right: -120px;
 }
 .star2 path{
-    opacity: .07;
+    opacity: .06;
 }
 
 
@@ -629,9 +629,10 @@ html, body{
 .thr-section{
     /* background-color: rgb(162, 222, 125); */
     padding: 50px 0;
-    margin: 100px 0;
-    /* position: relative; */
-    width: 100%;
+    /* margin: 50px 0; */
+    margin-bottom: 500px;
+    position: relative;
+    width: 100vw;
     /* height: 100vh;     */
 
     display: flex;
@@ -663,9 +664,11 @@ html, body{
     /* font-size: 4vw; */
     font-weight: 100;
     text-align: center;
+    /* line-height: 2.3em; */
     line-height: 40px;
     white-space: nowrap;
     box-sizing: border-box;
+    padding: 10px 0;
 
 }
 .design-heading h1 .design-heading-line{
@@ -674,17 +677,20 @@ html, body{
     align-items: center;
     flex-direction: row;  
     gap: 10px;
+    height: 80px;   
+    /* margin: 5px 0; */
+    padding: 0 10px;
     /* display: inline-block; */
-    /* background-color: rgb(172, 59, 78); */
-
+    /* background-color: rgb(241, 124, 143); */
+    overflow: hidden;
 }
 
 
 .split-word{
-    /* display: inline-block; Allows words to sit next to each other */
-    overflow: hidden; /* Crucial for the reveal effect */
-    vertical-align: top; /* Align words correctly if they have different heights */
-    transform: translateY(170px); /* Start hidden below its wrapper */
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* height: 100px; */
+    transform: translateY(150px); /* Start hidden below its wrapper */
     opacity: 0; /* Start invisible */
     /* background-color: pink; */
 }
