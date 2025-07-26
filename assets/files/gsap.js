@@ -379,7 +379,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const textSpanToSplit = document.querySelectorAll(".design-heading-line  span");
 
-console.log(textSpanToSplit);
 
 
 
