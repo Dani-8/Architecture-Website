@@ -379,7 +379,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const textSpanToSplit = document.querySelectorAll(".design-heading-line  span");
 
+let splitWords = [];
 
+textSpansToSplit.forEach(span => {
+    const split = new SplitText(span, {type: "words", wordsClass: "split-word"});
+    splitWords = splitWords.concat(split.words);
+
+})
 
 
 
