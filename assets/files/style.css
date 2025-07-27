@@ -745,9 +745,9 @@ html, body{
 }
 .center-img-cont{
     position: absolute;
-    top: 43%;
-    left: 43.5%;
-
+    top: 50%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
 }   
 .center-img-cont img{
     width: 150px;

@@ -403,9 +403,8 @@ let textRevealTL = gsap.timeline({
         trigger: designHeading,
         start: "top 70%",
         end: "center 45%",
-        // end: "top center",
         scrub: 3,
-        markers: true, // For debugging, remove in production
+        // markers: true, // For debugging, remove in production
     }
 
 })
