@@ -758,6 +758,14 @@ html, body{
     transition: all 0.3s ease-in-out;
 }
 
+/* Placeholder for the color-div's initial space */
+.color-div-placeholder {
+    width: 120px; 
+    height: 40px; 
+    flex-shrink: 0; 
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
 
 
 
