@@ -483,6 +483,8 @@ centerImgContTL.to(centerImgCont.querySelector("img"), {
 
 
 
+
+
 // let cardsRevealTL = gsap.timeLine({
 //     scrollTrigger: {
 //         trigger: centerImgCont,
