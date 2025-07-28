@@ -388,13 +388,17 @@ textSpansToSplit.forEach(span => {
 })
 
 
+const designHeading = document.querySelector(".design-heading");
+const designHeadingMidddleLine = document.querySelector(".design-heading-middle-line");
 
 const dashes = document.querySelectorAll(".dashes .dash");
-const centerImg = document.querySelector(".center-img-cont img");
+const centerImgCont = document.querySelector(".center-img-cont");
 const stars = document.querySelectorAll(".star-img-cont img");
-const designHeading = document.querySelector(".design-heading");
+const leftSideStars = document.querySelectorAll(".left-side-star");
+const rightSideStars = document.querySelectorAll(".right-side-star");
 
-
+const frameText = document.querySelector(".frame-text");
+const hillsideText = document.querySelector(".hillside-text");
 
 
 
@@ -404,7 +408,7 @@ let textRevealTL = gsap.timeline({
         start: "top 70%",
         end: "center 45%",
         scrub: 3,
-        // markers: true, // For debugging, remove in production
+        markers: true, // For debugging, remove in production
     }
 
 })
@@ -419,7 +423,7 @@ textRevealTL.to(splitWords, {
     ease: "back.out(2)"
 }, 0)
 
-textRevealTL.to([stars, dashes,  centerImg], {
+textRevealTL.to([stars, dashes,  centerImgCont], {
     opacity: 1,
     stagger: 0.1,
     duration: 1, // Duration for the fade-in effect
@@ -429,3 +433,72 @@ textRevealTL.to([stars, dashes,  centerImg], {
 
 
 textRevealTL.set(".design-heading-line", { overflow: "visible" });
+
+
+
+let centerImgContTL = gsap.timeline({
+    scrollTrigger: {
+        trigger: designHeadingMidddleLine,
+        start: "top 20%",
+        end: "bottom top",
+        scrub: 1,
+        markers: true, // For debugging, remove in production
+    }
+
+
+})
+
+
+centerImgContTL.to(centerImgCont, {
+    y: "500",
+    height: "700px",
+    width: "100vw",
+    left: "50%",
+    xPercent: -50,
+    yPerccent: 0,
+    ease: "power2.out",
+}, 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

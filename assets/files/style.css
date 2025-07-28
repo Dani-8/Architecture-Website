@@ -630,7 +630,7 @@ html, body{
     /* background-color: rgb(162, 222, 125); */
     padding: 50px 0;
     /* margin: 50px 0; */
-    margin-bottom: 500px;
+    margin-bottom: 1000px;
     position: relative;
     width: 100vw;
     /* height: 100vh;     */
@@ -744,24 +744,29 @@ html, body{
     cursor: pointer;
 }
 .center-img-cont{
+    /* background-color: pink; */
+    width: 150px;
+    height: 50px;
     position: absolute;
     top: 50%;
     left: 48.5%;
     transform: translate(-50%, -50%);
+    opacity: 0;
 }   
 .center-img-cont img{
-    width: 150px;
-    height: 50px;
-    transition: all 0.3s ease-out;
+    height: 100%;
+    width: 100%;
+    /* transition: all 0.3s ease-out; */
     object-fit: cover;
     cursor: pointer;
-    opacity: 0;
+
+    /* opacity: .2; */
 }
-.center-img-cont img:hover{
+/* .center-img-cont img:hover{
     margin: 0 150px;
     transform: scale(3);
     transition: all 0.3s ease-in-out;
-}
+} */
 
 /* Placeholder for the color-div's initial space */
 .color-div-placeholder {
