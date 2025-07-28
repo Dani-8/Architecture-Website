@@ -437,12 +437,14 @@ textRevealTL.set(".design-heading-line", { overflow: "visible" });
 
 
 let centerImgContTL = gsap.timeline({
+    
     scrollTrigger: {
         trigger: designHeadingMidddleLine,
         start: "top 20%",
         end: "bottom top",
         scrub: 1,
-        // markers: true, // For debugging, remove in production
+        // pin: true, // Pin the element during the scroll
+        markers: true, // For debugging, remove in production
     }
 
 
@@ -456,11 +458,29 @@ centerImgContTL.to(centerImgCont, {
     left: "50%",
     xPercent: -50,
     yPerccent: 0,
+    duration: 2.5, // Duration for the fade-in effect
     ease: "power2.out",
 }, 0);
 
 
+// centerImgContTL.to(centerImgCont.querySelector("img"), {
+//     duration: 1, // Duration for the fade-in effect
+//     scale: 1,
+// }, "-=1.2");
 
+centerImgContTL.to(centerImgCont.querySelector("img"), {
+    width: "60%",
+    duration: 1, // Duration for the fade-in effect
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: designHeadingMidddleLine,
+        start: "top -10%",
+        end: "bottom 0%",
+        scrub: 3,
+        // pin: true, // Pin the element during the scroll
+        markers: true, // For debugging, remove in production
+    }
+}, 2);
 
 
 
