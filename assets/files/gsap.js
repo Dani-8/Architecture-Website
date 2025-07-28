@@ -444,7 +444,7 @@ let centerImgContTL = gsap.timeline({
         end: "bottom top",
         scrub: 1,
         // pin: true, // Pin the element during the scroll
-        markers: true, // For debugging, remove in production
+        // markers: true, // For debugging, remove in production
     }
 
 
@@ -495,13 +495,13 @@ centerImgContTL.to(centerImgCont.querySelector("img"), {
     
 // })
 
-cardsRevealTL.to(centerImgCont.querySelector("img"), {
-    width: "60%",
-    duration: 1, // Duration for the fade-in effect
-    ease: "power2.out",
+// cardsRevealTL.to(centerImgCont.querySelector("img"), {
+//     width: "60%",
+//     duration: 1, // Duration for the fade-in effect
+//     ease: "power2.out",
 
 
-});
+// });
 
 
 
