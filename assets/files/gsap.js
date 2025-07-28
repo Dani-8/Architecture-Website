@@ -408,7 +408,7 @@ let textRevealTL = gsap.timeline({
         start: "top 70%",
         end: "center 45%",
         scrub: 3,
-        markers: true, // For debugging, remove in production
+        // markers: true, // For debugging, remove in production
     }
 
 })
@@ -442,7 +442,7 @@ let centerImgContTL = gsap.timeline({
         start: "top 20%",
         end: "bottom top",
         scrub: 1,
-        markers: true, // For debugging, remove in production
+        // markers: true, // For debugging, remove in production
     }
 
 
