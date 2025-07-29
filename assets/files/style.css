@@ -751,9 +751,7 @@ html, body{
     background-color: rgb(183, 70, 70);
     width: 150px;
     height: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: flex;
     position: absolute;
     top: 50%;
     left: 48.5%;
@@ -761,20 +759,17 @@ html, body{
 
 }
 .center-img-cont{
-    background-color: rgb(86, 85, 85);
-    /* height: 100%;
-    width: 100%; */
+    /* background-color: rgb(34, 68, 219); */
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-
-    opacity: 0;
+    position: relative;
     overflow: hidden;
 }   
 
-
-
 .center-img-cont img{
-    /* height: 100%;
-    width: 100%; */
+    height: 100%;
+    width: 100%;
     /* transition: all 0.3s ease-out; */
     object-fit: cover;
     cursor: pointer;
@@ -783,11 +778,23 @@ html, body{
 }
 
 .center-context{
-    opacity: 0;
-    display: none;
-
+    /* opacity: 0; */
+    /* display: none; */
+    background-color: rgb(35, 157, 132);
+    width: 0%;
 }
-
+.center-context p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
