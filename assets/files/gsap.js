@@ -416,7 +416,7 @@ let textRevealTL = gsap.timeline({
 
 textRevealTL.to(splitWords, {
     y: "0",       
-    stagger: .4, 
+    stagger: .3, 
     duration: 2, // Duration for each word animation
     opacity: 1,    
     ease: "power2.out",
@@ -441,10 +441,10 @@ let centerImgContTL = gsap.timeline({
     scrollTrigger: {
         trigger: designHeadingMidddleLine,
         start: "top 20%",
-        end: "bottom top",
+        end: "bottom -10%",
         scrub: 1,
         // pin: true, // Pin the element during the scroll
-        // markers: true, // For debugging, remove in production
+        markers: true, // For debugging, remove in production
     }
 
 

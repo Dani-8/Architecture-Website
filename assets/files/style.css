@@ -690,7 +690,7 @@ html, body{
     /* display: inline-block; */
     /* position: absolute; */
     /* height: 100px; */
-    transform: translateY(150px); /* Start hidden below its wrapper */
+    transform: translateY(160px); /* Start hidden below its wrapper */
     opacity: 0; /* Start invisible */
     /* background-color: pink; */
 }
