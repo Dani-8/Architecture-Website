@@ -392,7 +392,7 @@ const designHeading = document.querySelector(".design-heading");
 const designHeadingMidddleLine = document.querySelector(".design-heading-middle-line");
 
 const dashes = document.querySelectorAll(".dashes .dash");
-const centerImgCont = document.querySelector(".center-img-cont");
+const centerImgCont = document.querySelector(".center-card-cont");
 const stars = document.querySelectorAll(".star-img-cont img");
 const leftSideStars = document.querySelectorAll(".left-side-star");
 const rightSideStars = document.querySelectorAll(".right-side-star");
@@ -464,7 +464,10 @@ centerImgContTL.to(centerImgCont, {
 
 
 
-centerImgContTL.to(centerImgCont.querySelector("img"), {
+const centerImg = centerImgCont.querySelector(".center-img-cont img");
+
+
+centerImgContTL.to(centerImg, {
     width: "60%",
     duration: 1, // Duration for the fade-in effect
     ease: "power2.out",

@@ -690,7 +690,7 @@ html, body{
     /* display: inline-block; */
     /* position: absolute; */
     /* height: 100px; */
-    transform: translateY(160px); /* Start hidden below its wrapper */
+    transform: translateY(10px); /* Start hidden below its wrapper */
     opacity: 0; /* Start invisible */
     /* background-color: pink; */
 }
@@ -743,31 +743,53 @@ html, body{
     transition: all 2s ease;
     cursor: pointer;
 }
-.center-img-cont{
-    background-color: rgb(86, 85, 85);
+
+
+
+
+.center-card-cont{
+    background-color: rgb(183, 70, 70);
     width: 150px;
     height: 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     position: absolute;
     top: 50%;
     left: 48.5%;
     transform: translate(-50%, -50%);
+
+}
+.center-img-cont{
+    background-color: rgb(86, 85, 85);
+    /* height: 100%;
+    width: 100%; */
+    object-fit: cover;
+
     opacity: 0;
     overflow: hidden;
 }   
+
+
+
 .center-img-cont img{
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     /* transition: all 0.3s ease-out; */
     object-fit: cover;
     cursor: pointer;
     /* transform: scale(1.3); */
     /* opacity: .2; */
 }
-/* .center-img-cont img:hover{
-    margin: 0 150px;
-    transform: scale(3);
-    transition: all 0.3s ease-in-out;
-} */
+
+.center-context{
+    opacity: 0;
+    display: none;
+
+}
+
+
+
 
 /* Placeholder for the color-div's initial space */
 .color-div-placeholder {
