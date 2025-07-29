@@ -473,10 +473,6 @@ centerImgContTL.to(centerImgCont.querySelector("img"), {
 });
 
 
-// centerImgContTL.to(centerImgCont.querySelector("img"), {
-//     duration: 1, // Duration for the fade-in effect
-//     scale: 1,
-// }, "-=1.2");
 
 
 
@@ -485,25 +481,6 @@ centerImgContTL.to(centerImgCont.querySelector("img"), {
 
 
 
-// let cardsRevealTL = gsap.timeLine({
-//     scrollTrigger: {
-//         trigger: centerImgCont,
-//         start: "top 0%",
-//         end: "bottom 0%",
-//         scrub: 3,
-//         // pin: true, // Pin the element during the scroll
-//         markers: true, // For debugging, remove in production
-//     }
-    
-// })
-
-// cardsRevealTL.to(centerImgCont.querySelector("img"), {
-//     width: "60%",
-//     duration: 1, // Duration for the fade-in effect
-//     ease: "power2.out",
-
-
-// });
 
 
 
