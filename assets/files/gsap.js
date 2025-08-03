@@ -505,7 +505,7 @@ centercardsTL.fromTo(centercontext, {
 
 
 const mastercentercardTL = gsap.timeline()
-mastercentercardTL.add(centerImgContTL).add(centercardsTL, "=5.2"); 
+mastercentercardTL.add(centerImgContTL).add(centercardsTL , "=5.5"); // This order makes centerImgContTL first
 
 
 
