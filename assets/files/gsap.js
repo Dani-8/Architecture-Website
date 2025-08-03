@@ -475,7 +475,7 @@ const centercardsTL = gsap.timeline({
         end: "bottom -20%",
         scrub: 1,
         // pin: true, 
-        markers: true,
+        // markers: true,
     }
 });
 
