@@ -444,7 +444,7 @@ let centerImgContTL = gsap.timeline({
         end: "bottom -10%",
         scrub: 2,
         // pin: true, // Pin the element during the scroll
-        markers: true, // For debugging, remove in production
+        // markers: true, // For debugging, remove in production
     }
 
 

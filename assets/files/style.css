@@ -681,7 +681,7 @@ html, body{
     /* margin: 5px 0; */
     padding: 0 10px;
     /* display: inline-block; */
-    background-color: rgb(241, 124, 143);
+    /* background-color: rgb(241, 124, 143); */
     overflow: hidden;
 }
 
@@ -692,7 +692,7 @@ html, body{
     /* height: 100px; */
     transform: translateY(130px); /* Start hidden below its wrapper */
     opacity: 0; /* Start invisible */
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 
