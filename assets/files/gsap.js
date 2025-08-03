@@ -442,9 +442,9 @@ let centerImgContTL = gsap.timeline({
         trigger: designHeadingMidddleLine,
         start: "top 20%",
         end: "bottom -10%",
-        scrub: 1,
+        scrub: 2,
         // pin: true, // Pin the element during the scroll
-        // markers: true, // For debugging, remove in production
+        markers: true, // For debugging, remove in production
     }
 
 
@@ -461,7 +461,7 @@ centerImgContTL.to(centerImgCont, {
     yPerccent: 0,
     duration: 2.5, // Duration for the fade-in effect
     ease: "power2.out",
-}, 0);
+}, "<.5");
 
 
 
