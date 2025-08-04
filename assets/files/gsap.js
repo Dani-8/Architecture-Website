@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
             y: -100,
             duration: 1, // This belongs to the animation, not scrollTrigger
             scrollTrigger: {
-                trigger: ".heading2",
+                trigger: ".number",
                 start: "top 70%",
                 // markers: true, // For debugging, remove in production
             }
