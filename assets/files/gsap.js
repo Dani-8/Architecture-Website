@@ -298,7 +298,8 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from(".number h1", {
             opacity: 0,
             y: -100,
-            duration: 1, // This belongs to the animation, not scrollTrigger
+            duration: .8, // This belongs to the animation, not scrollTrigger
+            ease: "back.out(2.5)",
             scrollTrigger: {
                 trigger: ".number",
                 start: "top 70%",

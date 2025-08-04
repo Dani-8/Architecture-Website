@@ -381,7 +381,7 @@ html, body{
     right: 220px;
     bottom: 150px;
     background-color: rgb(219, 59, 139);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .number{
     background-color: #de611e;
@@ -407,7 +407,7 @@ html, body{
     font-size: 17px;
     line-height: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: rgb(251, 130, 191);
 }
 
