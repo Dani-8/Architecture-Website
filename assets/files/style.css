@@ -674,12 +674,12 @@ html, body{
 .design-heading h1 .design-heading-line{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     flex-direction: row;  
     gap: 10px;
     height: 80px;   
-    /* margin: 5px 0; */
-    padding: 0 10px;
+    margin: 5px 0;
+    padding: 0px 10px;
     /* display: inline-block; */
     /* background-color: rgb(241, 124, 143); */
     overflow: hidden;
@@ -689,8 +689,7 @@ html, body{
 .split-word{
     /* display: inline-block; */
     /* position: absolute; */
-    /* height: 100px; */
-    transform: translateY(130px); /* Start hidden below its wrapper */
+    transform: translateY(180px); /* Start hidden below its wrapper */
     opacity: 0; /* Start invisible */
     /* background-color: pink; */
 }
@@ -753,7 +752,7 @@ html, body{
     height: 50px;
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 48.5%;
     transform: translate(-50%, -50%);
 

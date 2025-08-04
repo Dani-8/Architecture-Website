@@ -406,8 +406,8 @@ let textRevealTL = gsap.timeline({
     scrollTrigger: {
         trigger: designHeading,
         start: "top 70%",
-        end: "center 45%",
-        scrub: 3,
+        end: "center 30%",
+        scrub: 2,
         // markers: true, // For debugging, remove in production
     }
 
@@ -416,11 +416,11 @@ let textRevealTL = gsap.timeline({
 
 textRevealTL.to(splitWords, {
     y: "0",       
-    stagger: .3, 
-    duration: 2, // Duration for each word animation
+    stagger: .5, 
+    duration: 3, // Duration for each word animation
     opacity: 1,    
     ease: "power2.out",
-    ease: "back.out(2)"
+    ease: "back.out(2.5)"
 }, 0)
 
 textRevealTL.to([stars, dashes,  centerImgCont], {
