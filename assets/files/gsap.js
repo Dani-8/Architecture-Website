@@ -294,17 +294,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // HEADING2
         // HEADING2
 
+        let heading2TL = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".heading2",
+                start: "top 70%",
+                end: "bottom 40%",
+                scrub: 1,
+                markers: true, // For debugging, remove in production
+            }
+        });
 
-        gsap.from(".number h1", {
+
+        heading2TL.from(".number h1", {
             opacity: 0,
             y: -100,
             duration: .8, // This belongs to the animation, not scrollTrigger
             ease: "back.out(2.3)",
-            scrollTrigger: {
-                trigger: ".number",
-                start: "top 70%",
-                // markers: true, // For debugging, remove in production
-            }
+            // scrollTrigger: {
+            //     trigger: ".number",
+            //     start: "top 70%",
+            //     // markers: true, // For debugging, remove in production
+            // }
         });
 
 
@@ -326,34 +336,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-        gsap.from(".para2Line", {
+        heading2TL.from(".para2Line", {
                 y: 100,
                 opacity: 0,
                 stagger: 0.2,
-                duration: 1.2,
+                duration: 1.5,
                 ease: "back.out(2.5)",
-                scrollTrigger: {
-                    trigger: ".heading2para",
-                    start: "top 75%",
-                    // markers: true, // For debugging, remove in production
-                    }
+                // scrollTrigger: {
+                //     trigger: ".heading2para",
+                //     start: "top 75%",
+                //     // markers: true, // For debugging, remove in production
+                //     }
             }
         );
 
 
-        gsap.from(".star2", {
+        heading2TL.from(".star2", {
                 opacity: 0,
                 scale: 0.5,
                 ease: "back.out(4)",
-                duration: .8,
-                scrollTrigger: {
-                    trigger: ".heading2para",
-                    start: "top 75%",
-                    // markers: true, // For debugging, remove in production
-                }
-            }
-
-        )
+                duration: 1,
+                // scrollTrigger: {
+                //     trigger: ".heading2para",
+                //     start: "top 75%",
+                //     // markers: true, // For debugging, remove in production
+                // }
+            }, "-=2.5")
 
 
 
