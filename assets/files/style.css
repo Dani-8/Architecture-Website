@@ -380,11 +380,11 @@ html, body{
     position: absolute;
     right: 220px;
     bottom: 150px;
-    background-color: rgb(219, 59, 139);
+    /* background-color: rgb(219, 59, 139); */
     overflow: hidden;
 }
 .number{
-    background-color: #de611e;
+    /* background-color: #de611e; */
     overflow: hidden;
 }
 .number h1{
@@ -408,7 +408,7 @@ html, body{
     line-height: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* overflow: hidden; */
-    background-color: rgb(251, 130, 191);
+    /* background-color: rgb(251, 130, 191); */
 }
 
 .para2Line{

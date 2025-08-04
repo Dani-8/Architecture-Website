@@ -299,13 +299,14 @@ document.addEventListener('DOMContentLoaded', () => {
             opacity: 0,
             y: -100,
             duration: .8, // This belongs to the animation, not scrollTrigger
-            ease: "back.out(2.5)",
+            ease: "back.out(2.3)",
             scrollTrigger: {
                 trigger: ".number",
                 start: "top 70%",
                 // markers: true, // For debugging, remove in production
             }
         });
+
 
 
 
