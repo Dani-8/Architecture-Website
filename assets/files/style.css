@@ -380,10 +380,14 @@ html, body{
     position: absolute;
     right: 220px;
     bottom: 150px;
-    /* background-color: rgb(219, 59, 139); */
+    background-color: rgb(219, 59, 139);
     overflow: hidden;
 }
-
+.number{
+    background-color: #de611e;
+    overflow: hidden;
+    
+}
 .number h1{
     color: white;
     font-size: 80px;
