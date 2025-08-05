@@ -411,7 +411,7 @@ let textRevealTL = gsap.timeline({
         start: "top 70%",
         end: "center 30%",
         scrub: 2,
-        markers: true, // For debugging, remove in production
+        // markers: true,
     }
 
 })
@@ -420,7 +420,7 @@ let textRevealTL = gsap.timeline({
 textRevealTL.to(splitWords, {
     y: "0",       
     stagger: .5, 
-    duration: 3, // Duration for each word animation
+    duration: 3, 
     opacity: 1,    
     ease: "power2.out",
     ease: "back.out(2.5)"
@@ -429,7 +429,7 @@ textRevealTL.to(splitWords, {
 textRevealTL.to([stars, dashes,  centerImgCont], {
     opacity: 1,
     stagger: 0.1,
-    duration: 1, // Duration for the fade-in effect
+    duration: 1,
     ease: "power3.out",
 }, 0.1); 
 
@@ -446,7 +446,7 @@ let centerImgContTL = gsap.timeline({
         start: "top 20%",
         end: "center 10%",
         scrub: 2,
-        markers: true, 
+        // markers: true, 
     }
 
 
