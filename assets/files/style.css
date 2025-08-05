@@ -633,7 +633,7 @@ html, body{
     /* background-color: rgb(162, 222, 125); */
     padding: 50px 0;
     /* margin: 50px 0; */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position: relative;
     width: 100vw;
     height: 140vh;
@@ -804,11 +804,11 @@ html, body{
 
 
 .forth-section{
-    background-color: rgba(216, 65, 65, 0.505);
-    padding: 50px 0;
+    /* background-color: rgba(216, 65, 65, 0.505); */
+    /* padding: 50px 0; */
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 
     display: flex;
     /* justify-content: center; */
@@ -818,9 +818,9 @@ html, body{
 }
 
 .forth-section .content-cont{
-    background-color: rgba(65, 216, 191, 0.505);
+    /* background-color: rgba(65, 216, 191, 0.505); */
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -865,7 +865,8 @@ html, body{
 
 
 .provide-cards{
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
+    margin: 20px 0;
     width: 100%;
     padding: 30px 0;
     box-sizing: border-box;
@@ -883,7 +884,7 @@ html, body{
     height: 200px;
     background-color: black;
     /* margin: 20px 0; */
-    padding: 20px 30px;
+    padding: 20px;
     box-sizing: border-box;
     border-radius: 200px;
     
@@ -919,19 +920,24 @@ html, body{
 
 .provide-card-content{
     /* background-color: #e2bd16; */
-    padding: 0 20px;
-
+    /* padding: 0 20px; */
     width: 60%;
     height: 100%;
+    border-radius: 50px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     gap: 130px;
 }
-
+.middle-provide-card-content{
+    flex-direction: row-reverse;
+    
+}
 
 .provide-card-img{
-    width: 450px;
+    width: 600px;
     height: 100%;
     /* background-color: rgb(34, 68, 219); */
     overflow: hidden;
@@ -945,7 +951,7 @@ html, body{
 
 .provide-card-para{
     color: rgb(114, 114, 114);
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 200px;
     /* background-color: rgb(219, 59, 139); */
