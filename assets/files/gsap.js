@@ -443,8 +443,8 @@ let centerImgContTL = gsap.timeline({
     
     scrollTrigger: {
         trigger: designHeadingMidddleLine,
-        start: "top 20%",
-        end: "center 10%",
+        start: "top 25%",
+        end: "center 0%",
         scrub: 2,
         // markers: true, 
     }
