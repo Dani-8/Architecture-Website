@@ -780,23 +780,6 @@ html, body{
     /* opacity: .2; */
 }
 
-/* .center-context{
-    background-color: rgb(35, 157, 132);
-    width: 0%;
-}
-.center-context p{
-    color: white;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px 20px;
-    text-align: center;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 
 
 /* Placeholder for the color-div's initial space */
@@ -804,7 +787,7 @@ html, body{
     width: 150px; 
     height: 50px; 
     flex-shrink: 0; 
-    background-color: rgb(231, 231, 231);
+    /* background-color: rgb(231, 231, 231); */
     /* border: 2px dashed rgba(0, 0, 0, 0.2); */
     box-sizing: border-box;
 }
