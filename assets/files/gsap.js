@@ -468,27 +468,31 @@ centerImgContTL.to(centerImgCont, {
 
 centerImgContTL.to(frameText, {
     x: "75px", 
+    duration: 2.5, 
     ease: "power2.out",
 }, 0);
 
 centerImgContTL.to(hillsideText, {
     x: "-75px",
+    duration: 2.5, 
     ease: "power2.out",
 }, 0);
 
 centerImgContTL.to(leftSideStars, {
     x: "70px", 
+    duration: 2.5, 
     ease: "power2.out",
 }, 0); 
 
 centerImgContTL.to(rightSideStars, {
     x: "-70px",
+    duration: 2.5, 
     ease: "power2.out",
 }, 0);
 
 
 const mastercentercardTL = gsap.timeline()
-mastercentercardTL.add(centerImgContTL).add(centercardsTL , "=5.5"); // This order makes centerImgContTL first
+mastercentercardTL.add(centerImgContTL).add(centercardsTL , "=5.5");    
 
 
 
