@@ -444,7 +444,7 @@ let centerImgContTL = gsap.timeline({
     scrollTrigger: {
         trigger: designHeadingMidddleLine,
         start: "top 20%",
-        end: "bottom 10%",
+        end: "center 10%",
         scrub: 2,
         // pin: true, // Pin the element during the scroll
         markers: true, // For debugging, remove in production
@@ -465,6 +465,30 @@ centerImgContTL.to(centerImgCont, {
     duration: 2.5, // Duration for the fade-in effect
     ease: "power2.out",
 });
+
+
+centerImgContTL.to(frameText, {
+    x: "75px", // Move 60 pixels to the RIGHT (closer to center)
+    ease: "power2.out",
+}, 0); // Start at the beginning of the timeline
+
+// Animate "HILLSIDE" text: move closer to the center (left)
+centerImgContTL.to(hillsideText, {
+    x: "-75px", // Move 60 pixels to the LEFT (closer to center)
+    ease: "power2.out",
+}, 0); // Start at the beginning of the timeline
+
+// Animate left star circles: move closer to the center (right)
+centerImgContTL.to(leftSideStars, {
+    x: "70px", // Move 50 pixels to the RIGHT (closer to center)
+    ease: "power2.out",
+}, 0); // Start at the beginning of the timeline
+
+// Animate right star circles: move closer to the center (left)
+centerImgContTL.to(rightSideStars, {
+    x: "-70px", // Move 50 pixels to the LEFT (closer to center)
+    ease: "power2.out",
+}, 0); // Start at the beginning of the timeline
 
 
 const mastercentercardTL = gsap.timeline()
