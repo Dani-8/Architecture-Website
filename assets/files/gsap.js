@@ -426,7 +426,13 @@ textRevealTL.to(splitWords, {
     ease: "back.out(2.5)"
 }, 0)
 
-textRevealTL.to([stars, dashes,  centerImgCont], {
+textRevealTL.to(centerImgCont, {
+    opacity: 1,
+    duration: 1,
+    ease: "power3.out",
+}, 2); 
+
+textRevealTL.to([stars, dashes], {
     opacity: 1,
     stagger: 0.1,
     duration: 1,
@@ -454,7 +460,6 @@ let centerImgContTL = gsap.timeline({
 
 
 centerImgContTL.to(centerImgCont, {
-    opacity: 1,
     y: "500",
     height: "700px",
     width: "100vw",
