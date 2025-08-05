@@ -411,7 +411,7 @@ let textRevealTL = gsap.timeline({
         start: "top 70%",
         end: "center 30%",
         scrub: 2,
-        // markers: true, // For debugging, remove in production
+        markers: true, // For debugging, remove in production
     }
 
 })
@@ -444,10 +444,10 @@ let centerImgContTL = gsap.timeline({
     scrollTrigger: {
         trigger: designHeadingMidddleLine,
         start: "top 20%",
-        end: "bottom -10%",
+        end: "bottom 10%",
         scrub: 2,
         // pin: true, // Pin the element during the scroll
-        // markers: true, // For debugging, remove in production
+        markers: true, // For debugging, remove in production
     }
 
 
@@ -464,48 +464,7 @@ centerImgContTL.to(centerImgCont, {
     yPerccent: 0,
     duration: 2.5, // Duration for the fade-in effect
     ease: "power2.out",
-}, "<.5");
-
-
-
-// const centerImg = centerImgCont.querySelector(".center-img-cont");
-// const centercontext = centerImgCont.querySelector(".center-context");
-
-
-// const centercardsTL = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: centerImg,
-//         start: "top 0%",
-//         end: "bottom -20%",
-//         scrub: 1,
-//         // pin: true, 
-//         // markers: true,
-//     }
-// });
-
-
-
-// centercardsTL.fromTo(centerImg, {
-//     width: "100%",
-// }, {
-//     width: "70%",
-//     duration: 1, 
-//     ease: "power2.out",
-
-// });
-
-
-
-// centercardsTL.fromTo(centercontext, {
-//     x: 300,
-
-// }, {
-//     x: 0,
-//     width: "30%",
-//     duration: 1,
-//     ease: "power2.out",
-// }, "<");
-
+});
 
 
 const mastercentercardTL = gsap.timeline()
