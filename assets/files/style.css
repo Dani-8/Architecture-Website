@@ -828,9 +828,10 @@ html, body{
 }
 
 .provide-heading{
+    /* background-color: lightblue; */
     width: 90%;
     text-align: center;
-    background-color: lightblue;
+    border-bottom: 2px solid black;
     padding: 20px 30px;
 
     display: flex;
@@ -846,14 +847,106 @@ html, body{
 }
 
 .provide-heading p{
-    background-color: pink;
+    /* background-color: pink; */
     padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     text-align: start;
-    /* font-weight: 400; */
 }
 
 
 
 
+/* PROVIDE CARDS */
+/* PROVIDE CARDS */
+/* PROVIDE CARDS */
+/* PROVIDE CARDS */
+/* PROVIDE CARDS */
+
+
+.provide-cards{
+    background-color: lightseagreen;
+    width: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.provide-card{
+    width: 90%;
+    height: 200px;
+    background-color: black;
+    /* margin: 20px 0; */
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 200px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    /* position: relative; */
+    
+}
+
+
+
+
+.provide-card-heading{
+    /* width: 40%; */
+    /* background-color: rgb(242, 91, 116); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.provide-card-heading h1{
+    font-family: 'Moki', sans-serif;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+
+
+.provide-card-content{
+    /* background-color: #e2bd16; */
+    padding: 0 20px;
+
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+
+
+.provide-card-img{
+    width: 450px;
+    height: 100%;
+    /* background-color: rgb(34, 68, 219); */
+    overflow: hidden;
+    border-radius: 200px;
+}
+.provide-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.provide-card-para{
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
+    /* background-color: rgb(219, 59, 139); */
+}
