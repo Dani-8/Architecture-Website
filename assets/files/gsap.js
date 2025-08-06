@@ -505,18 +505,16 @@ mastercentercardTL.add(centerImgContTL).add(centercardsTL , "=5.5");
 
 
 
+// PROVIDE CARDS ANIMATIONS
+// PROVIDE CARDS ANIMATIONS
+// PROVIDE CARDS ANIMATIONS
+// PROVIDE CARDS ANIMATIONS
+// PROVIDE CARDS ANIMATIONS
 
 
-
-
-
-
-
-
-
-
-
-
+git add .
+git commit -m "minor update"
+git push
 
 
 
