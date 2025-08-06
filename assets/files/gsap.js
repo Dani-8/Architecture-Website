@@ -496,8 +496,6 @@ centerImgContTL.to(rightSideStars, {
 }, 0);
 
 
-const mastercentercardTL = gsap.timeline()
-mastercentercardTL.add(centerImgContTL).add(centercardsTL , "=5.5");    
 
 
 
@@ -513,30 +511,32 @@ mastercentercardTL.add(centerImgContTL).add(centercardsTL , "=5.5");
 
 
 
-const provideCards = document.querySelectorAll(".provide-cards");
+const provideCards = document.querySelectorAll(".provide-card");
 const provideCard = document.querySelector(".provide-card");
 const provideCardHeading = document.querySelector(".provide-card-heading");
 const provideCardPara = document.querySelector(".provide-card-para");
 const provideCardImg = document.querySelector(".provide-card-img");
 
 
-let provideCardsTL = gsap.timeline({
-    scrollTrigger: {
-        trigger: provideCard,
-        start: "top 20%",
-        end: "center 30%",
-        scrub: 2,
-        markers: true, 
-    }
-})
 
+provideCards.forEach(card => {
+    let provideCardsTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: card, // Each card triggers its own timeline
+            start: "top 70%",
+            end: "center 50%",
+            scrub: 2,
+            markers: true,
+        }
+    });
 
-provideCardsTL.to(provideCard, {
-    opacity: 1,
-    stagger: 0.2,
-    duration: 1.5,
-    ease: "power2.out",
-}, 0);
+    
+    provideCardsTL.to(card, {
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+    });
+});
 
 
 
