@@ -515,7 +515,7 @@ const provideCards = document.querySelectorAll(".provide-card");
 const provideCard = document.querySelector(".provide-card");
 const provideCardHeading = document.querySelector(".provide-card-heading");
 const provideCardPara = document.querySelector(".provide-card-para");
-const provideCardImg = document.querySelector(".provide-card-img");
+const provideCardImg = document.querySelectorAll(".provide-card-img");
 
 
 
@@ -524,7 +524,7 @@ provideCards.forEach(card => {
         scrollTrigger: {
             trigger: card, // Each card triggers its own timeline
             start: "top 70%",
-            end: "center 50%",
+            end: "center 40%",
             scrub: 2,
             markers: true,
         }
@@ -536,18 +536,40 @@ provideCards.forEach(card => {
         duration: 1,
         ease: "power2.out",
     });
+
+
+
+
+
 });
 
 
+// const provideCards = document.querySelectorAll(".provide-card");
 
+provideCards.forEach(card => {
+    // Select the content within each card
+    const cardContent = card.querySelectorAll(".provide-card-heading, .provide-card-img, .provide-card-para");
 
+    // Create a timeline for this specific card
+    let provideCardsTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: card,
+            start: "top 70%",
+            end: "center 30%",
+            scrub: 2,
+            markers: true,
+        }
+    });
 
-
-
-
-
-
-
+    // Animate the content elements with a stagger effect
+    provideCardsTL.from(cardContent, {
+        opacity: 0,
+        y: 50, // They will slide up from 50px below
+        stagger: 0.2, // 0.2 seconds between each element's animation start
+        duration: 1.5,
+        ease: "power2.out",
+    });
+});
 
 
 
