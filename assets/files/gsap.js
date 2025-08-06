@@ -512,9 +512,32 @@ mastercentercardTL.add(centerImgContTL).add(centercardsTL , "=5.5");
 // PROVIDE CARDS ANIMATIONS
 
 
-git add .
-git commit -m "minor update"
-git push
+
+const provideCards = document.querySelectorAll(".provide-cards");
+const provideCard = document.querySelector(".provide-card");
+const provideCardHeading = document.querySelector(".provide-card-heading");
+const provideCardPara = document.querySelector(".provide-card-para");
+const provideCardImg = document.querySelector(".provide-card-img");
+
+
+let provideCardsTL = gsap.timeline({
+    scrollTrigger: {
+        trigger: provideCard,
+        start: "top 20%",
+        end: "center 30%",
+        scrub: 2,
+        markers: true, 
+    }
+})
+
+
+provideCardsTL.to(provideCard, {
+    opacity: 1,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "power2.out",
+}, 0);
+
 
 
 
