@@ -530,14 +530,14 @@ provideCards.forEach(card => {
         }
     });
 
-
-    const cardContent = card.querySelectorAll(".provide-card-heading, .provide-card-img, .provide-card-para");
+    const cardContentHeading = card.querySelector(".provide-card-heading");
+    const cardContentPara = card.querySelector(".provide-card-para");
+    const cardContentImg = card.querySelector(".provide-card-img");
 
     
     provideCardsTL.fromTo(card, {
         opacity: 0,
         width: 300,
-        // duration: 1,
         ease: "power2.out",
     },
         {
@@ -551,14 +551,24 @@ provideCards.forEach(card => {
 
 
     // Animate the content elements with a stagger effect
-    provideCardsTL.from(cardContent, {
+    provideCardsTL.fromTo(cardContentImg, {
         opacity: 0,
-        y: 50, // They will slide up from 50px below
-        stagger: 0.2, // 0.2 seconds between each element's animation start
+        y: -150, // They will slide up from 50px below
+        duration: 1.5,
+        width: 200,
+    },{
+        opacity: 1,
+        y: 0,
         duration: 1.5,
         ease: "power2.out",
-    });
+        ease: "bounce",
+    }, "<0.5"); // "<0.5" means it starts 0.5 seconds before the previous animation ends
 
+    provideCardsTL.to(cardContentImg,{
+        width: 600,
+        duration: 1.5,
+        ease: "back.out(2)"
+    })
 });
 
 
