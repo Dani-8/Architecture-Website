@@ -526,7 +526,7 @@ provideCards.forEach(card => {
             start: "top 70%",
             end: "center 35%",
             scrub: 2,
-            markers: true,
+            // markers: true,
         }
     });
 
@@ -562,12 +562,12 @@ provideCards.forEach(card => {
         duration: 1.5,
         ease: "power2.out",
         ease: "bounce",
-        // ease: "back.out(2)"
+        ease: "back.out(3)"
     }); // "<0.5" means it starts 0.5 seconds before the previous animation ends
 
     provideCardsTL.to(cardContentImg,{
         width: 600,
-        duration: 1.5,
+        duration: 2,
         ease: "power2.out",
         // ease: "back.out(2)"
     }, "<1.5")
