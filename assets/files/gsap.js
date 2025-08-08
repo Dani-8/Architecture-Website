@@ -452,7 +452,7 @@ let centerImgContTL = gsap.timeline({
         start: "top 25%",
         end: "bottom 0%",
         scrub: 2,
-        markers: true, 
+        // markers: true, 
     }
 
 
@@ -523,10 +523,10 @@ provideCards.forEach(card => {
     let provideCardsTL = gsap.timeline({
         scrollTrigger: {
             trigger: card, // Each card triggers its own timeline
-            start: "top 80%",
-            end: "top 50%",
+            start: "top 70%",
+            end: "center 50%",
             scrub: 2,
-            // markers: true,
+            markers: true,
         }
     });
 
@@ -542,9 +542,9 @@ provideCards.forEach(card => {
     },
         {
         opacity: 1,
-        duration: 2,
+        duration: 3,
         width: "90%",
-
+        ease: "back.out(1.5)",
         
     });
 
@@ -553,21 +553,18 @@ provideCards.forEach(card => {
     // Animate the content elements with a stagger effect
     provideCardsTL.fromTo(cardContentImg, {
         opacity: 0,
-        y: -150, // They will slide up from 50px below
-        // duration: 1.5,
+        y: -150,
         width: 200,
     },{
         opacity: 1,
         y: 0,
-        duration: 1.5,
-        ease: "power2.out",
-        ease: "bounce",
-        ease: "back.out(3)"
-    }); // "<0.5" means it starts 0.5 seconds before the previous animation ends
+        duration: 2,
+        ease: "power4.out",
+    });
 
     provideCardsTL.to(cardContentImg,{
         width: 600,
-        duration: 2,
+        duration: 3,
         ease: "power2.out",
         // ease: "back.out(2)"
     }, "<1.5")
