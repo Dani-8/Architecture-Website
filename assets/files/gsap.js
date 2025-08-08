@@ -526,7 +526,7 @@ provideCards.forEach(card => {
             start: "top 70%",
             end: "center 50%",
             scrub: 2,
-            markers: true,
+            // markers: true,  
         }
     });
 
