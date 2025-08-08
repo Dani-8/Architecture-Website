@@ -450,9 +450,9 @@ let centerImgContTL = gsap.timeline({
     scrollTrigger: {
         trigger: designHeadingMidddleLine,
         start: "top 25%",
-        end: "center 0%",
+        end: "bottom 0%",
         scrub: 2,
-        // markers: true, 
+        markers: true, 
     }
 
 
@@ -526,7 +526,7 @@ provideCards.forEach(card => {
             start: "top 80%",
             end: "top 50%",
             scrub: 2,
-            markers: true,
+            // markers: true,
         }
     });
 
