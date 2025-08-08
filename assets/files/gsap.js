@@ -523,10 +523,10 @@ provideCards.forEach(card => {
     let provideCardsTL = gsap.timeline({
         scrollTrigger: {
             trigger: card, // Each card triggers its own timeline
-            start: "top 70%",
-            end: "center 35%",
+            start: "top 80%",
+            end: "top 50%",
             scrub: 2,
-            // markers: true,
+            markers: true,
         }
     });
 
@@ -542,7 +542,7 @@ provideCards.forEach(card => {
     },
         {
         opacity: 1,
-        duration: 1,
+        duration: 2,
         width: "90%",
 
         
