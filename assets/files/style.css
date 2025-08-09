@@ -960,7 +960,10 @@ html, body{
 }
 
 
+.headingLine, .paraLine{
+    opacity: 0;
 
+}
 
 
 

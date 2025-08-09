@@ -508,18 +508,18 @@ centerImgContTL.to(rightSideStars, {
 // PROVIDE CARDS ANIMATIONS
 // PROVIDE CARDS ANIMATIONS
 // PROVIDE CARDS ANIMATIONS
-    function animateHeadingLines(headingElement) {
-        const lines = headingElement.innerHTML.split("<br>");
-        headingElement.innerHTML = lines
-            .map(line => `<span class="headingLine" style="display:inline-block; overflow:hidden;">${line}</span>`)
-            .join("<br>");
-    }
-    function animateHeadingLines(ParaElement) {
-        const lines = ParaElement.innerHTML.split("<br>");
-        ParaElement.innerHTML = lines
-            .map(line => `<span class="paraLine" style="display:inline-block; overflow:hidden;">${line}</span>`)
-            .join("<br>");
-    }
+function animateHeadingLines(headingElement) {
+    const lines = headingElement.innerHTML.split("<br>");
+    headingElement.innerHTML = lines
+        .map(line => `<span class="headingLine" style="display:inline-block; overflow:hidden;">${line}</span>`)
+        .join("<br>");
+}
+function animateParaLines(ParaElement) {
+    const lines = ParaElement.innerHTML.split("<br>");
+    ParaElement.innerHTML = lines
+        .map(line => `<span class="paraLine" style="display:inline-block; overflow:hidden;">${line}</span>`)
+        .join("<br>");
+}
 
 
 const provideCards = document.querySelectorAll(".provide-card");
@@ -568,18 +568,18 @@ provideCards.forEach(card => {
     provideCardsTL.fromTo(
         cardContentHeading.querySelectorAll(".headingLine"), 
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<"
+        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<1.5"
     );
 
 
 
-    animateHeadingLines(cardContentPara);
+    animateParaLines(cardContentPara);
 
     // Now animate inside the same timeline
     provideCardsTL.fromTo(
         cardContentPara.querySelectorAll(".paraLine"), 
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<"
+        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<1.5"
     );
 
 
