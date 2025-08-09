@@ -508,18 +508,29 @@ centerImgContTL.to(rightSideStars, {
 // PROVIDE CARDS ANIMATIONS
 // PROVIDE CARDS ANIMATIONS
 // PROVIDE CARDS ANIMATIONS
-function animateHeadingLines(headingElement) {
-    const lines = headingElement.innerHTML.split("<br>");
-    headingElement.innerHTML = lines
-        .map(line => `<span class="headingLine" style="display:inline-block; opacity: 0; overflow:hidden;">${line}</span>`)
-        .join("<br>");
+// function animateHeadingLines(headingElement) {
+//     const lines = headingElement.innerHTML.split("<br>");
+//     headingElement.innerHTML = lines
+//         .map(line => `<span class="headingLine" style="display:inline-block; opacity: 0; overflow:hidden;">${line}</span>`)
+//         .join("<br>");
+// }
+// function animateParaLines(ParaElement) {
+//     const lines = ParaElement.innerHTML.split("<br>");
+//     ParaElement.innerHTML = lines
+//         .map(line => `<span class="paraLine" style="display:inline-block; opacity: 0; overflow:hidden;">${line}</span>`)
+//         .join("<br>");
+// }
+
+
+function animateLines(el, className) {
+  const lines = el.innerHTML.split("<br>");
+  el.innerHTML = lines
+    .map(line => `<span class="${className}" style="display:inline-block; overflow:hidden;">${line}</span>`)
+    .join("<br>");
 }
-function animateParaLines(ParaElement) {
-    const lines = ParaElement.innerHTML.split("<br>");
-    ParaElement.innerHTML = lines
-        .map(line => `<span class="paraLine" style="display:inline-block; opacity: 0; overflow:hidden;">${line}</span>`)
-        .join("<br>");
-}
+
+
+
 
 
 const provideCards = document.querySelectorAll(".provide-card");
@@ -548,6 +559,9 @@ provideCards.forEach(card => {
     const cardContentImg = card.querySelector(".provide-card-img");
 
     
+    animateLines(cardContentHeading, "headingLine");
+    animateLines(cardContentPara, "paraLine");
+
     provideCardsTL.fromTo(card, {
         opacity: 0,
         width: 300,
@@ -565,7 +579,9 @@ provideCards.forEach(card => {
 
 
 
-    animateHeadingLines(cardContentHeading);
+
+
+    // animateHeadingLines(cardContentHeading);
 
     // Now animate inside the same timeline
     provideCardsTL.fromTo(
@@ -574,7 +590,12 @@ provideCards.forEach(card => {
         { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }
     );
 
-
+    // // Now animate inside the same timeline
+    provideCardsTL.fromTo(
+        cardContentPara.querySelectorAll(".paraLine"), 
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }
+    );
 
 
     // Animate the content elements with a stagger effect
@@ -598,15 +619,28 @@ provideCards.forEach(card => {
 
 
 
-    
-    animateParaLines(cardContentPara);
 
-    // Now animate inside the same timeline
-    provideCardsTL.fromTo(
-        cardContentPara.querySelectorAll(".paraLine"), 
-        { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }
-    );
+    // provideCardsTL.fromTo(cardContentPara, {
+    //     opacity: 0,
+    //     y: -150,
+    //     width: 200,
+    // },{
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 2,
+    //     ease: "power4.out",
+    // });
+
+
+    
+    // animateParaLines(cardContentPara);
+
+    // // Now animate inside the same timeline
+    // provideCardsTL.fromTo(
+    //     cardContentPara.querySelectorAll(".paraLine"), 
+    //     { y: 100, opacity: 0 },
+    //     { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "-=2"
+    // );
 
 });
 

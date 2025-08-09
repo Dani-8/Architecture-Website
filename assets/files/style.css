@@ -961,11 +961,11 @@ html, body{
 
 
 .headingLine{
-    background-color: rgb(172, 123, 18);
+    /* background-color: rgb(172, 123, 18); */
 }
 .paraLine{
-    background-color: rgb(19, 105, 134);
-    
+    /* background-color: rgb(19, 105, 134); */
+opacity: 0;
 }
 
 
