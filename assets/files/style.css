@@ -960,9 +960,12 @@ html, body{
 }
 
 
-.headingLine, .paraLine{
-    opacity: 0;
-
+.headingLine{
+    background-color: rgb(172, 123, 18);
+}
+.paraLine{
+    background-color: rgb(19, 105, 134);
+    
 }
 
 

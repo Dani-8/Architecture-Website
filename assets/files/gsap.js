@@ -511,13 +511,13 @@ centerImgContTL.to(rightSideStars, {
 function animateHeadingLines(headingElement) {
     const lines = headingElement.innerHTML.split("<br>");
     headingElement.innerHTML = lines
-        .map(line => `<span class="headingLine" style="display:inline-block; overflow:hidden;">${line}</span>`)
+        .map(line => `<span class="headingLine" style="display:inline-block; opacity: 0; overflow:hidden;">${line}</span>`)
         .join("<br>");
 }
 function animateParaLines(ParaElement) {
     const lines = ParaElement.innerHTML.split("<br>");
     ParaElement.innerHTML = lines
-        .map(line => `<span class="paraLine" style="display:inline-block; overflow:hidden;">${line}</span>`)
+        .map(line => `<span class="paraLine" style="display:inline-block; opacity: 0; overflow:hidden;">${line}</span>`)
         .join("<br>");
 }
 
@@ -535,9 +535,11 @@ provideCards.forEach(card => {
         scrollTrigger: {
             trigger: card, // Each card triggers its own timeline
             start: "top 70%",
-            end: "center 50%",
+            end: "bottom 50%",
             scrub: 2,
-            // markers: true,  
+            markers: true,  
+            toggleActions: "play none none reverse"
+
         }
     });
 
@@ -562,27 +564,15 @@ provideCards.forEach(card => {
 
 
 
+
     animateHeadingLines(cardContentHeading);
 
     // Now animate inside the same timeline
     provideCardsTL.fromTo(
         cardContentHeading.querySelectorAll(".headingLine"), 
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<1.5"
+        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }
     );
-
-
-
-    animateParaLines(cardContentPara);
-
-    // Now animate inside the same timeline
-    provideCardsTL.fromTo(
-        cardContentPara.querySelectorAll(".paraLine"), 
-        { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<1.5"
-    );
-
-
 
 
 
@@ -608,6 +598,15 @@ provideCards.forEach(card => {
 
 
 
+    
+    animateParaLines(cardContentPara);
+
+    // Now animate inside the same timeline
+    provideCardsTL.fromTo(
+        cardContentPara.querySelectorAll(".paraLine"), 
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }
+    );
 
 });
 
