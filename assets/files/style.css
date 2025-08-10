@@ -961,11 +961,11 @@ html, body{
 
 
 .cardContentHeadingLine{
-    /* background-color: rgb(172, 123, 18); */
+    background-color: rgb(172, 123, 18);
 }
 .cardContentParaLine{
     background-color: rgb(240, 91, 91);
-opacity: 0;
+/* opacity: 0; */
 }
 
 

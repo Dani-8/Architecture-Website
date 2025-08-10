@@ -546,8 +546,8 @@ provideCards.forEach(card => {
     const cardContentImg = card.querySelector(".provide-card-img");
 
     
-    animateLines(cardContentPara, "cardContentParaLine");
     animateLines(cardContentHeading, "cardContentHeadingLine");
+    animateLines(cardContentPara, "cardContentParaLine");
 
     provideCardsTL.fromTo(card, {
         opacity: 0,
@@ -572,14 +572,14 @@ provideCards.forEach(card => {
 
     // Now animate inside the same timeline
     provideCardsTL.fromTo(
-        cardContentHeading.querySelectorAll(".headingLine"), 
+        cardContentHeading.querySelectorAll(".cardContentHeadingLine"), 
         { y: 100, opacity: 0 },
         { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<"
     );
 
     // // Now animate inside the same timeline
     provideCardsTL.fromTo(
-        cardContentPara.querySelectorAll(".paraLine"), 
+        cardContentPara.querySelectorAll(".cardContentParaLine"), 
         { y: 100, opacity: 0 },
         { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<1"
     );
