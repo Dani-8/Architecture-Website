@@ -960,11 +960,11 @@ html, body{
 }
 
 
-.headingLine{
+.cardContentHeadingLine{
     /* background-color: rgb(172, 123, 18); */
 }
-.paraLine{
-    /* background-color: rgb(19, 105, 134); */
+.cardContentParaLine{
+    background-color: rgb(240, 91, 91);
 opacity: 0;
 }
 
