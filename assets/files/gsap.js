@@ -519,6 +519,7 @@ function animateLines(el, className) {
 
 
 
+const provideCardCont = document.querySelector(".provide-cards");
 
 const provideCards = document.querySelectorAll(".provide-card");
 const provideCard = document.querySelector(".provide-card");
@@ -568,8 +569,6 @@ provideCards.forEach(card => {
 
 
 
-    // provideCardsTL.set(cardContentPara, { opacity: 0 });
-
     // Now animate inside the same timeline
     provideCardsTL.fromTo(
         cardContentHeading.querySelectorAll(".cardContentHeadingLine"), 
@@ -595,9 +594,9 @@ provideCards.forEach(card => {
     },{
         opacity: 1,
         y: 0,
-        duration: 2,
+        duration: 3,
         ease: "power4.out",
-    });
+    }, "<2");
 
     provideCardsTL.to(cardContentImg,{
         width: 600,
