@@ -534,7 +534,7 @@ provideCards.forEach(card => {
         scrollTrigger: {
             trigger: card, // Each card triggers its own timeline
             start: "top 70%",
-            end: "bottom 50%",
+            end: "bottom 40%",
             scrub: 2,
             markers: true,  
             toggleActions: "play none none reverse"
