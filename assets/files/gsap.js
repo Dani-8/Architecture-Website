@@ -534,9 +534,9 @@ provideCards.forEach(card => {
         scrollTrigger: {
             trigger: card, // Each card triggers its own timeline
             start: "top 70%",
-            end: "bottom 40%",
-            scrub: 2,
-            markers: true,  
+            end: "center 40%",
+            scrub: 3,
+            // markers: true,  
             toggleActions: "play none none reverse"
 
         }
@@ -573,13 +573,13 @@ provideCards.forEach(card => {
     provideCardsTL.fromTo(
         cardContentHeading.querySelectorAll(".cardContentHeadingLine"), 
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<"
+        { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<1"
     );
 
     // // Now animate inside the same timeline
     provideCardsTL.fromTo(
         cardContentPara.querySelectorAll(".cardContentParaLine"), 
-        { y: 100, opacity: 0 },
+        { y: 50, opacity: 0 },
         { y: 0, opacity: 1, stagger: 1, duration: 3, ease: "back.out(2)" }, "<1"
     );
 
@@ -602,7 +602,6 @@ provideCards.forEach(card => {
         width: 600,
         duration: 3,
         ease: "power2.out",
-        // ease: "back.out(2)"
     }, "<1.5")
 
 
