@@ -974,11 +974,31 @@ html, body{
     height: 200px;
     background-color: rgba(244, 135, 76, 0.5);
 
+    padding: 20px;
     margin-top: 50px;
+    overflow: hidden;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.marque-content
+.marque-content{
+    display: flex;
+    gap: 20px;
+    /* background-color: rgb(244, 114, 164); */
+}
 
+.marque-content h1{
+    flex-shrink: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    transition: .5s ease;
+}
+.marque-content h1:hover{
+    /* color: #ff6b6b; */
+    text-shadow: 0 0 10px #ff6b6b;
+    cursor: pointer;
+}
 
 
 
