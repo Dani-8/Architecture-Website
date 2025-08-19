@@ -984,7 +984,7 @@ html, body{
 }
 .marque-content{
     display: flex;
-    gap: 20px;
+    gap: 100px;
     /* background-color: rgb(244, 114, 164); */
 }
 
