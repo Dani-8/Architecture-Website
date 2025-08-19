@@ -972,7 +972,9 @@ html, body{
 .marque-cont{
     width: 100%;
     height: 200px;
-    background-color: rgba(244, 135, 76, 0.5);
+    background-color: rgb(255, 220, 200);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 
     padding: 20px;
     margin-top: 50px;
@@ -984,6 +986,7 @@ html, body{
 }
 .marque-content{
     display: flex;
+    width: 100%;
     gap: 100px;
     /* background-color: rgb(244, 114, 164); */
 }
@@ -991,12 +994,13 @@ html, body{
 .marque-content h1{
     flex-shrink: 0;
     font-family: 'Moki', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
+    text-transform: uppercase;
     transition: .5s ease;
 }
-.marque-content h1:hover{
+.marque-content h1:hover:not(#dash){
     /* color: #ff6b6b; */
-    text-shadow: 0 0 10px #ff6b6b;
+    text-shadow: 0 0 10px #df0f0f;
     cursor: pointer;
 }
 
