@@ -990,7 +990,7 @@ html, body{
 
 .marque-content h1{
     flex-shrink: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Moki', sans-serif;
     font-size: 70px;
     transition: .5s ease;
 }
