@@ -998,11 +998,6 @@ html, body{
     text-transform: uppercase;
     transition: .5s ease;
 }
-.marque-content h1:hover:not(#dash){
-    /* color: #ff6b6b; */
-    text-shadow: 0 0 10px #df0f0f;
-    cursor: pointer;
-}
 
 
 
