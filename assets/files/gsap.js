@@ -638,7 +638,7 @@ function marqueAnimation(selector){
     })
 
 
-
+    // HOVER ON ANY HEADING 
     const marqueHeadings = document.querySelectorAll(".marque-content h1")
 
     marqueHeadings.forEach(heading => {
