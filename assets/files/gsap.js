@@ -616,11 +616,44 @@ provideCards.forEach(card => {
 
 
 
+// MARQUE
+// MARQUE
+// MARQUE
+// MARQUE
+
+function marqueAnimation(selector){
+    const marque = document.querySelector(selector)
+    const marqueContent = marque.innerHTML
+
+    marque.innerHTML += marqueContent + marqueContent
+
+    const marqueContentWidth = marque.scrollWidth / 3 + 30
+
+
+    const marqueAnime = gsap.to(marque, {
+        x: -marqueContentWidth,   
+        duration: 15,
+        repeat: -1,
+        ease: "none",
+    })
 
 
 
+    const marqueHeadings = document.querySelectorAll(".marque-content h1")
 
+    marqueHeadings.forEach(heading => {
+        heading.addEventListener("mouseenter", () => {
+            marqueAnime.pause()
+        })
 
+        heading.addEventListener("mouseleave", () => {
+            marqueAnime.resume()
+        })
+    })
+
+}
+
+marqueAnimation(".marque-content")
 
 
 

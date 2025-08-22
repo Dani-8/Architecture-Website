@@ -996,9 +996,12 @@ html, body{
     font-family: 'Moki', sans-serif;
     font-size: 50px;
     text-transform: uppercase;
-    transition: .5s ease;
+    transition: .3s ease;
 }
+.marque-content h1:hover{
+    text-shadow: 0 0 20px #c34705;
 
+}
 
 
 
