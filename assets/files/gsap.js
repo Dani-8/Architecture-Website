@@ -651,6 +651,15 @@ function marqueAnimation(selector){
         })
     })
 
+
+
+    ScrollTrigger.creat({
+        trigger: "body",
+        start: "top top", 
+        end: "bottom bottom",
+        // markers: true,
+    })
+
 }
 
 marqueAnimation(".marque-content")
