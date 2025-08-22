@@ -653,11 +653,18 @@ function marqueAnimation(selector){
 
 
 
-    ScrollTrigger.creat({
+    ScrollTrigger.create({
         trigger: "body",
         start: "top top", 
         end: "bottom bottom",
         // markers: true,
+        onUpdate: (self) => {
+            if (self.direction == 1){
+                marqueAnime.timeScale(1)
+            }else{
+                marqueAnime.timeScale(-1)
+            }
+        }
     })
 
 }
